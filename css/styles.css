@@ -1,0 +1,41 @@
+html {
+  padding: 0;
+  margin: 0
+}
+
+body {
+  background-color: #ffffff;
+}
+
+.navbar-default {
+  background-color: var(--dark-blue);
+}
+
+.container-md {
+  padding: 60px;
+}
+
+.container-hero {
+  padding: 30px;
+  background-color: var(--blue);
+}
+
+h6 {
+  font-size: 1.125rem;
+  color: var(--dark-blue);
+}
+
+h1 {
+  font-size: 2.125rem;
+  color: var(--dark-blue);
+}
+
+p {
+  font-size: 1.25rem;
+  color: var(--dark-blue);
+}
+
+h3 {
+  text-align: center;
+  color: var(--white);
+}
