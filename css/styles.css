@@ -11,12 +11,19 @@ body {
   color: var(--dark-blue);
 }
 
+/* ABOUT */
+
 /* Navbar */
 
 .navbar .container-fluid {
-  background-color: var(--purple);
   padding: 0px;
   margin: 0px;
+  border: none;
+  background-color: var(--purple) !important;
+}
+
+.custom-navbar {
+  background-color: var(--purple) !important;
 }
 
 .navbar-brand {
@@ -45,7 +52,7 @@ body {
 }
 
 h6 {
-  font-size: 1.125rem;
+  font-size: 1rem;
   text-decoration: underline;
 }
 
@@ -54,14 +61,17 @@ h1 {
   font-weight: bold;
 }
 
-p {
+h2 {
+  margin-top: 24px;
+}
+
+.text-normal {
   font-size: 1.25rem;
-  padding: 16px 16px 16px 0px;
+  padding: 16px 16px 0px 0px;
 }
 
 h3 {
-  text-align: center;
-  color: var(--white);
+  color: var(--dark-blue);
   font-size: 1.5rem;
 }
 
@@ -69,6 +79,10 @@ h4 {
   text-align: center;
   color: var(--dark-blue);
   font-size: 1.25rem;
+}
+
+.img-fluid {
+margin-top: -61px;
 }
 
 /*  Services Available to Users After Joining the Platform */
@@ -99,50 +113,52 @@ h4 {
 }
 
 
-/*  Why We Do It Section */
+/*  WHY WE DO IT */
 
 .container-fluid {
   background-color: var(--aqua-bg);
-  padding: 64px 64px 64px 64px;
-  border: 1px solid black;
+  padding: 7% 17% 7% 17%
 }
 
-h2 {
+.custom-heading {
   font-size: 1.5rem;
-  padding: 40px;
+  max-width: 900px; /* Limits the width of the heading */
+  padding: 20px;  /* Adds padding on the sides */
+  margin: 0 auto;   /* Centers the heading horizontally */
+  text-align: center; /* Centers the text inside the heading */
 }
 
-.card-group-first {
+.container-reason {
   margin-top: 60px;
 }
 
 .card-body-fact-one {
   background-color: var(--purple);
   color: var(--white);
-  padding: 60px;
+  padding: 15% 15% 10% 15%;
 }
 
 .card-body-fact-two {
   background-color: var(--blue);
   color: var(--white);
-  padding: 60px;
+  padding: 15% 15% 10% 15%;
 }
 
 .card-body-fact-three {
   background-color: var(--aqua);
   color: var(--white);
-  padding: 60px;
+  padding: 15% 15% 10% 15%;
 }
 
 .card-body-fact-four {
   background-color: var(--pink);
   color: var(--white);
-  padding: 60px;
+  padding: 15% 15% 10% 15%;
 }
 
 .card-title-facts {
   font-size: 2rem;
-  font-weight: 'bold';
+  font-weight: 600;
 }
 
 /* Breadcrumbs links */
@@ -231,6 +247,18 @@ h2 {
   margin-top: 7%;
 }
 
+.col-help {
+  margin-top: 32px;
+}
+
+.img-fluid-help {
+  margin-top: 32px;
+}
+
+.row-work {
+  margin-top: 80px;
+}
+
 /* TEAM */
 
 .container-fluid-team {
@@ -250,6 +278,14 @@ h2 {
   margin-bottom: 0px;
 }
 
+.img-fluid-social {
+  margin-top: 0px;
+}
+
+.text-small {
+  font-size: 1rem;
+  margin-top: 8px;
+}
 
 
 
