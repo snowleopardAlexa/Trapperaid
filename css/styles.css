@@ -287,8 +287,30 @@ margin-top: -61px;
   margin-top: 8px;
 }
 
+/* FOOTER */
 
+.footer {
+  background-color: var(--purple); 
+  padding: 20px;
+}
 
+.copyright {
+  padding: 0px;
+  color: var(--white); 
+  font-size: 0.85em;
+}
+
+.slogan {
+  margin-top: 0px;
+  margin-left: 80px;
+  font-size: 0.85rem;
+  color: var(--white); 
+  font-weight: 400;
+}
+
+.text-white {
+  font-size: 0.85rem;
+}
 
 
 
