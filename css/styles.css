@@ -211,6 +211,17 @@ h2 {
   background: url('/images/pink.svg') no-repeat center center;
 }
 
+/* HOW IT WORKS */
+
+.container-work {
+  margin-top: 64px;
+  background-color: aqua;
+}
+
+.row-work {
+  margin-top: 80px;
+}
+
 
 
 

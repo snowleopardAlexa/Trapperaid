@@ -1,0 +1,83 @@
+/* Vertical Breadcrumbs */
+
+.breadcrumb-item {
+  margin-bottom: 1px;
+  border-radius: 4px;
+  padding: 20px;
+}
+
+.breadcrumb-item-one {
+  background-color: var(--aqua);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.breadcrumb-item-two {
+  background-color: var(--purple);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.breadcrumb-item-three {
+  background-color: var(--dark-blue);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.breadcrumb-item-four {
+  background-color: var(--blue);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.breadcrumb-item-five {
+  background-color: var(--pink);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.icon-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.icon-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.icon-list li i {
+  margin-right: 10px;
+}
+
+.container-section {
+  border-radius: 4px;
+  padding: 20px;
+}
+
+.section-content {
+  background-color: #fff; /* White background for content sections */
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.heading-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.bold-heading {
+  font-weight: bold;
+}
+
+/* Remove default breadcrumb divider */
+.breadcrumb {
+  background: none; /* Remove the background */
+  padding: 0; /* Remove padding */
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: none; /* Remove the default divider */
+}
+
