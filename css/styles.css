@@ -103,12 +103,45 @@ h4 {
 
 .container-fluid {
   background-color: var(--aqua-bg);
-  padding: 64px;
+  padding: 64px 64px 64px 64px;
 }
 
 h2 {
   font-size: 1.5rem;
   padding: 40px;
+}
+
+.card-group-first {
+  margin-top: 60px;
+}
+
+.card-body-fact-one {
+  background-color: var(--purple);
+  color: var(--white);
+  padding: 60px;
+}
+
+.card-body-fact-two {
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 60px;
+}
+
+.card-body-fact-three {
+  background-color: var(--aqua);
+  color: var(--white);
+  padding: 60px;
+}
+
+.card-body-fact-four {
+  background-color: var(--pink);
+  color: var(--white);
+  padding: 60px;
+}
+
+.card-title-facts {
+  font-size: 2rem;
+  font-weight: 'bold';
 }
 
 
