@@ -1,4 +1,4 @@
-/* Main */
+/* GLOBALS */
 
 html {
   padding: 0;
@@ -9,6 +9,11 @@ body {
   background-color: #ffffff;
   font-family: 'Plus Jakarta Sans';
   color: var(--dark-blue);
+}
+
+.container-fluid {
+  padding: 7% 17% 7% 17%;
+  background-color: var(--white);
 }
 
 /* ABOUT */
@@ -114,11 +119,6 @@ margin-top: -61px;
 
 
 /*  WHY WE DO IT */
-
-.container-fluid {
-  background-color: var(--aqua-bg);
-  padding: 7% 17% 7% 17%
-}
 
 .custom-heading {
   font-size: 1.5rem;
