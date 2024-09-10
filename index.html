@@ -23,6 +23,13 @@
         display: block;
       }
     </style>
+    <style>
+      .responsive-img {
+        width: 100%; /* Ensure image is responsive */
+        height: auto; /* Maintain aspect ratio */
+        margin-top: 20%;
+      }
+    </style>
   </head>
   <body>
 
@@ -306,56 +313,19 @@
       
             <!-- Second Column: Content Area -->
             <div class="col-md-6">
-              <div id="forcatrescuers" class="section-content">
-                <h3>As a solo cat rescuer, you are at the forefront of trapping, neutering, and returning feral cats. YOU ARE OUR HERO!</h3>
-                <div class="row">
-                  <!-- Column with Heading and List -->
-                  <div class="col-md-6">
-                    <h4>STEPS TO BE TAKEN</h4>
-                    <ul>
-                      <li>1. Register on Trapperaid and pass the verification process. </li>
-                      <li>2. Choose your role - Trapper, Host, Driver, Trapper Helper or all of them. </li>
-                      <li>3. Either fill up information about your cat colony, holding space or a transport you offer. </li>
-                      <li>4. Let our team to raise the funds for your colony cats, book spay/neuter appointments, pay at the vet by using the funds or either wait for a Trapper to book your holding space or a transport. </li>
-                    </ul>
-                  </div>
-      
-                  <!-- Column with Responsive Image -->
-                  <div class="col-md-6">
-                    <img src="images/forcatsrescuers.png" class="img-fluid" alt="Responsive Image">
-                  </div>
-                </div>
-              </div>
-              <!-- Additional Small Heading -->
-              <h6 class="bold-heading text-center mt-4">ATTENTION: We never ask for the exact location of a cat colony! We only ask for a general area like Ridgewood Queens for data tracking and success rate purpose to better understand which areas need support the most.</h6>
-            
-              <div id="forcatrescuers" class="section-content">
-                <h3>As a solo cat rescuer, you are at the forefront of trapping, neutering, and returning feral cats. YOU ARE OUR HERO!</h3>
-                <div class="row">
-                  <!-- Column with Heading and List -->
-                  <div class="col-md-6">
-                    <h4>STEPS TO BE TAKEN</h4>
-                    <ul>
-                      <li>1. Register on Trapperaid and pass the verification process. </li>
-                      <li>2. Choose your role - Trapper, Host, Driver, Trapper Helper or all of them. </li>
-                      <li>3. Either fill up information about your cat colony, holding space or a transport you offer. </li>
-                      <li>4. Let our team to raise the funds for your colony cats, book spay/neuter appointments, pay at the vet by using the funds or either wait for a Trapper to book your holding space or a transport. </li>
-                    </ul>
-                  </div>
-      
-                  <!-- Column with Responsive Image -->
-                  <div class="col-md-6">
-                    <img src="images/forcatsrescuers.png" class="img-fluid" alt="Responsive Image">
-                  </div>
-                </div>
-              </div>
+              <div class="content-area" id="content-area">
+              <!-- Content will be updated dynamically -->
             </div>
           </div>
-        </div>
-    </div>
+             <!-- Additional Small Heading -->
+             <h6 class="bold-heading title-attention text-center">ATTENTION: We never ask for the exact location of a cat colony! We only ask for a general area like Ridgewood Queens for data tracking and success rate purpose to better understand which areas need support the most.</h6>
+          
+          </div>
+          </div>
   </div>
+</div>
 
-<!-- Breadcrumbs horizontal -->
+<!-- BREADCRUMBS HORIZONTAL -->
 <script>
 // Select all breadcrumb links
 const breadcrumbLinks = document.querySelectorAll('.breadcrumb-link');
@@ -413,75 +383,92 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>
 
 <!-- BREADCRUMBS VERTICAL -->
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const breadcrumbLinks = document.querySelectorAll('.breadcrumb-link');
-        const contentArea = document.querySelector('.section-content');
-  
-        breadcrumbLinks.forEach(link => {
-          link.addEventListener('click', function (event) {
-            event.preventDefault();
-  
-            // Remove active class from all breadcrumb links
-            breadcrumbLinks.forEach(link => link.classList.remove('active'));
-  
-            // Add active class to the clicked link
-            this.classList.add('active');
-  
-            // Update content based on data-content attribute
-            const contentId = this.getAttribute('data-content');
-            updateContent(contentId);
-          });
-        });
-  
-        function updateContent(contentId) {
-          // Example content changes based on data-content
-          if (contentId === 'content1') {
-            contentArea.innerHTML = `
-              <h3>Section Heading 1</h3>
-              <div class="row">
-                <div class="col-md-6">
-                  <h4>Subheading 1</h4>
-                  <ul>
-                    <li>Item 1</li>
-                    <li>Item 2</li>
-                    <li>Item 3</li>
-                    <li>Item 4</li>
-                  </ul>
-                </div>
-                <div class="col-md-6">
-                  <img src="https://via.placeholder.com/600x400" class="img-fluid" alt="Responsive Image">
-                </div>
-              </div>
-              <h6 class="bold-heading text-center mt-4">Another Small Heading 1</h6>
-            `;
-          } else if (contentId === 'forsheltersrescues') {
-            contentArea.innerHTML = `
-              <h3>Section Heading 2</h3>
-              <div class="row">
-                <div class="col-md-6">
-                  <h4>Subheading 2</h4>
-                  <ul>
-                    <li>Item A</li>
-                    <li>Item B</li>
-                    <li>Item C</li>
-                    <li>Item D</li>
-                  </ul>
-                </div>
-                <div class="col-md-6">
-                  <img src="https://via.placeholder.com/600x400?text=Image+2" class="img-fluid" alt="Responsive Image">
-                </div>
-              </div>
-              <h6 class="bold-heading text-center mt-4">Another Small Heading 2</h6>
-            `;
-          }
-          // Add more content changes for other data-content values if needed
-        }
-  
-        // Set initial content
-        updateContent('forcatsrescuers');
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const breadcrumbLinks = document.querySelectorAll('.breadcrumb-item');
+    const contentArea = document.getElementById('content-area');
+
+    breadcrumbLinks.forEach(link => {
+      link.addEventListener('click', function (event) {
+        event.preventDefault();
+
+        // Remove active class from all breadcrumb links
+        breadcrumbLinks.forEach(link => link.classList.remove('active'));
+
+        // Add active class to the clicked link
+        this.classList.add('active');
+
+        // Update content based on data-content attribute
+        const contentId = this.getAttribute('data-content');
+        updateContent(contentId);
       });
-    </script>
+    });
+
+    function updateContent(contentId) {
+      // Example content changes based on data-content
+      let htmlContent = '';
+      if (contentId === 'forone') {
+        htmlContent = `
+          <h4>As a solo cat rescuer, you are at the forefront of trapping, neutering, and returning feral cats. YOU ARE OUR HERO!</h4>
+           <div class="container mt-4">
+           <div class="row">
+             <!-- First Column -->
+          <div class="col-md-6">
+          <h6>STEPS TO BE TAKEN</h6>
+          <ul class="list-unstyled">
+          <li>1. Register on Trapperaid and pass the verification process.</li><br>
+          <li>2. Choose your role - Trapper, Host, Driver, Trapper Helper or all of them.</li><br>
+          <li>3. Either fill up information about your cat colony, holding space or a transport you offer.</li><br>
+          <li>4. Let our team to raise the funds for your colony cats, book spay/neuter appointments, pay at the vet by using the funds or either wait for a Trapper to book your holding space or a transport. </li>
+        </ul>
+      </div>
+     <!-- Second Column -->
+      <div class="col-md-6">
+        <img src="images/forcatsrescuers.png" alt="Responsive Image" class="responsive-img">
+      </div>
+    </div>
+  </div>
+        `;
+      } else if (contentId === 'fortwo') {
+        htmlContent = `
+    <h4>As a shelter/rescue you are often unable to take in or treat cats in need. You need a help and assistance to make your beautiful mission to work. </h4>
+           <div class="container mt-4">
+           <div class="row">
+             <!-- First Column -->
+          <div class="col-md-6">
+          <h6>STEPS TO BE TAKEN</h6>
+          <ul class="list-unstyled">
+          <li>1. We will register your shelter/rescue on the platform and guide you on how to list resources, schedule services, and manage volunteers.</li><br>
+          <li>2. We will provide you training sessions on using the platform for coordination and data entry.</li><br>
+          <li>3. Start using our services! Raise funds for your colony cats, book a holding place or a transport. Schedule the spay/neuter appointment, pay at the vet for spay/neuter and unexpected medial problems.</li><br>
+          <li>4. Let our team to raise the funds for your colony cats, book spay/neuter appointments, pay at the vet by using the funds or either wait for a Trapper to book your holding space or a transport. </li>
+        </ul>
+      </div>
+     <!-- Second Column -->
+      <div class="col-md-6">
+        <img src="images/forcatsrescuers.png" alt="Responsive Image" class="responsive-img">
+      </div>
+    </div>
+  </div>        
+        `;
+      } else if (contentId === 'forthree') {
+        htmlContent = `
+          <h3>Section Heading 3</h3>
+          <p>This is content for Services.</p>
+        `;
+      } else if (contentId === 'forfour') {
+        htmlContent = `
+          <h3>Section Heading 4</h3>
+          <p>This is content for Contact.</p>
+        `;
+      }
+      contentArea.innerHTML = htmlContent;
+    }
+
+    // Set initial content
+    updateContent('forone');
+  });
+</script>
 
     <!-- Bootstrap 5 JS and Popper.js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>

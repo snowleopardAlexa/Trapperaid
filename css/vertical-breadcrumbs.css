@@ -36,39 +36,47 @@
   font-weight: 500;
 }
 
-.icon-list {
-  list-style-type: none;
-  padding-left: 0;
+/* Underline under the box - the user knows that the item was clicked */
+
+.breadcrumb-item-one.active {
+  border-bottom: 4px solid white;
 }
 
-.icon-list li {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
+.breadcrumb-item-two.active {
+  border-bottom: 4px solid white;
 }
 
-.icon-list li i {
-  margin-right: 10px;
+.breadcrumb-item-three.active {
+  border-bottom: 4px solid white;
 }
 
+.breadcrumb-item-four.active {
+  border-bottom: 4px solid white;
+}
+
+.breadcrumb-item-five.active {
+  border-bottom: 4px solid white;
+}
+
+ul {
+  list-style-type: none; /* Removes bullet points */
+  padding: 8px; /* Removes default padding */
+  margin: 0; /* Removes default margin */
+}
+
+/* Vertical breadcrumbs */
 .container-section {
+  margin-top: 100px;
   border-radius: 4px;
   padding: 20px;
 }
 
 .section-content {
-  background-color: #fff; /* White background for content sections */
   padding: 20px;
-  border-radius: 4px;
 }
 
 .heading-container {
   text-align: center;
-  margin-bottom: 20px;
-}
-
-.bold-heading {
-  font-weight: bold;
 }
 
 /* Remove default breadcrumb divider */
@@ -81,3 +89,8 @@
   content: none; /* Remove the default divider */
 }
 
+.title-attention {
+  font-size: 1rem;
+  color: var(--red);
+  text-decoration: none;
+}

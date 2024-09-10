@@ -215,11 +215,20 @@ h2 {
 
 .container-work {
   margin-top: 64px;
-  background-color: aqua;
 }
 
 .row-work {
-  margin-top: 80px;
+  margin-top: 32px;
+}
+
+.heading {
+  color: var(--dark-blue);
+  margin-bottom: 10%;
+}
+
+.bold-heading {
+  font-weight: bold;
+  margin-top: 7%;
 }
 
 
