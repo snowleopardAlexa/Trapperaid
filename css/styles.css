@@ -21,7 +21,11 @@ body {
 
 .navbar-brand {
   color: var(--white);
-  font-weight: bold;
+  font-weight: 600;
+}
+
+.navbar-brand:hover {
+  color: var(--white);
 }
 
 .navbar .navbar-nav .nav-link {
@@ -60,3 +64,37 @@ h3 {
   color: var(--white);
   font-size: 1.5rem;
 }
+
+h4 {
+  text-align: center;
+  color: var(--dark-blue);
+  font-size: 1.25rem;
+}
+
+/*  Services Available to Users After Joining the Platform */
+
+.container-features {
+  padding: 0px;
+}
+
+.card-body-cat {
+  background-image: url('/images/cat-bg.png');
+  background-attachment: scroll;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.card-body-search {
+  background-image: url('/images/search-bg.png');
+  background-attachment: scroll;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.card-body-vets {
+  background-image: url('/images/vets-bg.png');
+  background-attachment: scroll;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
