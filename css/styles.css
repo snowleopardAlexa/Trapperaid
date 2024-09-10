@@ -104,6 +104,7 @@ h4 {
 .container-fluid {
   background-color: var(--aqua-bg);
   padding: 64px 64px 64px 64px;
+  border: 1px solid black;
 }
 
 h2 {
@@ -143,6 +144,75 @@ h2 {
   font-size: 2rem;
   font-weight: 'bold';
 }
+
+/* Breadcrumbs links */
+
+.breadcrumb-item-catsrescuers a {
+  font-weight: 600;
+  color: var(--aqua);
+}
+
+.breadcrumb-item-sheltersrescues a {
+  font-weight: 600;
+  color: var(--purple);
+}
+
+.breadcrumb-item-governments a {
+  font-weight: 600;
+  color: var(--dark-blue);
+}
+
+.breadcrumb-item-vetsclinics a {
+  font-weight: 600;
+  color: var(--blue);
+}
+
+.breadcrumb-item-largeorgs a {
+  font-weight: 600;
+  color: var(--pink);
+}
+
+
+/* Check icons in Breadcrumbs */
+
+.icon-list li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding-left: 30px; /* Adjust based on icon size */
+}
+
+.icon-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px; /* Adjust size based on your icon */
+  height: 20px; /* Adjust size based on your icon */
+  background: url('/images/aqua.svg') no-repeat center center;
+  background-size: contain; /* Ensures the entire icon is visible */
+}
+
+.icon-list-sheltersrescues li::before {
+  background: url('/images/purple.svg') no-repeat center center;
+}
+
+.icon-list-governments li::before {
+  background: url('/images/darkblue.svg') no-repeat center center;
+}
+
+.icon-list-vetsclinics li::before {
+  background: url('/images/blue.svg') no-repeat center center;
+}
+
+.icon-list-largeorgs li::before {
+  background: url('/images/pink.svg') no-repeat center center;
+}
+
+
+
 
 
 
