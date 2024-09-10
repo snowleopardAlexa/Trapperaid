@@ -231,6 +231,24 @@ h2 {
   margin-top: 7%;
 }
 
+/* TEAM */
+
+.container-fluid-team {
+  background-color: var(--white);
+}
+
+.card {
+  border: none;
+}
+
+.card-title {
+  margin-bottom: 0px;
+}
+
+.card-text {
+  font-size: 1rem;
+  margin-bottom: 0px;
+}
 
 
 
