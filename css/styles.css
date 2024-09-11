@@ -3,6 +3,7 @@
 html {
   padding: 0;
   margin: 0;
+  font-size: 18px; /* default for larger screens */
 }
 
 body {
@@ -48,6 +49,42 @@ h6 {
   color: var(--dark-blue);
   font-size: 1rem;
   text-decoration: underline;
+}
+
+/* media query to adjust font size for smaller screens */
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 16px; /* Smaller screens get a smaller root font size */
+  }
+}
+
+@media (max-width: 992px) {
+  html {
+    font-size: 16px; /* Further reduce root font size for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 16px; /* Reduce root font size for tablets */
+  }
+}
+
+@media (max-width: 576px) {
+  html {
+    font-size: 12px; /* Small screens, like mobile phones */
+  }
+}
+
+/* adjust padding for mobile screens (max-width: 767px) */
+@media (max-width: 767.98px) {
+  .container-about {
+    padding: 0px; /* smaller padding for mobile screens */
+  }
+  .container-fluid {
+    padding: 12% 7% 12% 7%;
+  }
 }
 
 /* body text */

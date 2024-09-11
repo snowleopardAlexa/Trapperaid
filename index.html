@@ -44,6 +44,12 @@
       width: 100%;
       height: auto;
     }
+    .custom-full-width {
+      width: 100%;
+      max-width: 100%; /* Override Bootstrap's max-width */
+      padding-left: 0; /* Optional: Remove left padding */
+      padding-right: 0; /* Optional: Remove right padding */
+    }
     </style>
   </head>
   <body>
@@ -93,20 +99,21 @@
     <!-- ABOUT -->
     <div class="container-fluid">
       <div class="row">
-        <div class="col">
-          <div class="container">
+        <div class="col-md-6">
+          <div class="container-about">
             <h6 style="margin-bottom: 16px;" class="ms-1">About</h6>
             <h1>Connecting individuals involved in Trap-Neuter-Return(TNR) enabling them access and offer essential services. </h1>
-            <p class="body-large" style=" padding: 16px 16px 0px 0px;">Trapperaid is a platform that centralizes services (funds, holding space, transport) while providing the local governments an access to the data about the numbers of spayed/neutered cats, their treatment cost, and veterinary offices that offer discounted services to feral cats. </p>
+            <p class="body-large" style="padding: 16px 16px 0px 0px;">Trapperaid is a platform that centralizes services (funds, holding space, transport) while providing the local governments an access to the data about the numbers of spayed/neutered cats, their treatment cost, and veterinary offices that offer discounted services to feral cats. </p>
            </div>
         </div>
-        <div class="col">
+        <!-- column hidden on mobile (screen width < 768px) -->
+        <div class="col-md-6 d-none d-md-block">
           <div class="container">
             <img src="/images/hero-4.png" class="img-fluid" alt="The man and the woman facing forward smiling, gradient backgrounds blue and green, surrounded by icons.">
         </div>
         </div>
       </div>
-      <div class="container-md container-hero rounded-pill" style="margin-top: 40px;">
+      <div class="" style="margin-top: 40px; background-color: #646AD9;">
          <h3 style="color: white; text-align: center;">Every person willing to help feral cats can join Trapperaid!</h3>
        </div>
        <div class="container-md container-member">
