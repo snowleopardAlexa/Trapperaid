@@ -181,35 +181,37 @@ margin-top: -61px;
   font-weight: 600;
 }
 
-/* Breadcrumbs links */
+/************************** HOW CAN WE HELP ***************************/
 
-.breadcrumb-item-catsrescuers a {
+/* breadcrumbs links */
+
+.breadcrumb-item-one a {
   font-weight: 600;
   color: var(--aqua);
 }
 
-.breadcrumb-item-sheltersrescues a {
+.breadcrumb-item-two a {
   font-weight: 600;
   color: var(--purple);
 }
 
-.breadcrumb-item-governments a {
+.breadcrumb-item-three a {
   font-weight: 600;
   color: var(--dark-blue);
 }
 
-.breadcrumb-item-vetsclinics a {
+.breadcrumb-item-four a {
   font-weight: 600;
   color: var(--blue);
 }
 
-.breadcrumb-item-largeorgs a {
+.breadcrumb-item-five a {
   font-weight: 600;
   color: var(--pink);
 }
 
 
-/* Check icons in Breadcrumbs */
+/* check icons in breadcrumbs */
 
 .icon-list li {
   position: relative;
@@ -231,23 +233,23 @@ margin-top: -61px;
   background-size: contain; /* Ensures the entire icon is visible */
 }
 
-.icon-list-sheltersrescues li::before {
+.icon-list-two li::before {
   background: url('/images/purple.svg') no-repeat center center;
 }
 
-.icon-list-governments li::before {
+.icon-list-three li::before {
   background: url('/images/darkblue.svg') no-repeat center center;
 }
 
-.icon-list-vetsclinics li::before {
+.icon-list-four li::before {
   background: url('/images/blue.svg') no-repeat center center;
 }
 
-.icon-list-largeorgs li::before {
+.icon-list-five li::before {
   background: url('/images/pink.svg') no-repeat center center;
 }
 
-/* HOW IT WORKS */
+/************************** HOW IT WORKS ***************************/
 
 .container-work {
   margin-top: 64px;
@@ -279,33 +281,110 @@ margin-top: -61px;
   margin-top: 80px;
 }
 
-/* TEAM */
+/* vertical breadcrumbs */
 
-.container-fluid-team {
-  background-color: var(--white);
+.breadcrumb-item {
+  margin-bottom: 1px;
+  border-radius: 4px;
+  padding: 20px;
 }
+
+.breadcrumb-item-forone {
+  background-color: var(--aqua);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.breadcrumb-item-fortwo {
+  background-color: var(--purple);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.breadcrumb-item-forthree {
+  background-color: var(--dark-blue);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.breadcrumb-item-forfour {
+  background-color: var(--blue);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.breadcrumb-item-forfive {
+  background-color: var(--pink);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Underline under the box - the user knows that the item was clicked */
+
+.breadcrumb-item-forone.active {
+  border-bottom: 4px solid white;
+}
+
+.breadcrumb-item-fortwo.active {
+  border-bottom: 4px solid white;
+}
+
+.breadcrumb-item-forthree.active {
+  border-bottom: 4px solid white;
+}
+
+.breadcrumb-item-forfour.active {
+  border-bottom: 4px solid white;
+}
+
+.breadcrumb-item-forfive.active {
+  border-bottom: 4px solid white;
+}
+
+ul {
+  list-style-type: none; /* Removes bullet points */
+  padding: 8px; /* Removes default padding */
+  margin: 0; /* Removes default margin */
+}
+
+/* vertical breadcrumbs container */
+.container-section {
+  margin-top: 100px;
+  border-radius: 4px;
+  padding: 20px;
+}
+
+/* Remove default breadcrumb divider */
+.breadcrumb {
+  background: none; /* Remove the background */
+  padding: 0; /* Remove padding */
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: none; /* Remove the default divider */
+}
+
+.title-attention {
+  font-size: 1rem;
+  color: var(--red);
+  text-decoration: none;
+}
+
+
+/* TEAM */
 
 .card {
   border: none;
 }
 
-.card-title {
-  margin-bottom: 0px;
-}
-
-.card-text {
-  font-size: 1rem;
-  margin-bottom: 0px;
+.card-body {
+  padding: 12px 0px;
 }
 
 .img-fluid-social {
   margin-top: 0px;
 }
 
-.text-small {
-  font-size: 1rem;
-  margin-top: 8px;
-}
 
 /* FOOTER */
 
@@ -330,6 +409,15 @@ margin-top: -61px;
 
 .text-white {
   font-size: 0.85rem;
+}
+
+.text-reset {
+  text-decoration: none;
+}
+
+.text-uppercase {
+  color: var(--white);
+  text-decoration: none;
 }
 
 
