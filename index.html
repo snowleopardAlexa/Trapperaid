@@ -12,9 +12,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-7c61L5pUtT6mEaB2eMo4NYlDzLqaRtM/EGgVrWbREI7AaDh4VoH9X2ZpA1hf7H/K7Qtnwop/8HYejVVuFbbM8A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/colors.css">
-    <link rel="stylesheet" href="css/breadcrumbs.css">
-    <link rel="stylesheet" href="css/vertical-breadcrumbs.css">
-    <!--Breadcrumb horizontal-->
     <style>
       /* Hide all content sections by default */
       .content-section {
@@ -31,6 +28,10 @@
         height: auto; /* Maintain aspect ratio */
         margin-top: 20%;
       }
+      .full-width-img {
+      width: 100vw; /* Full width of the viewport */
+      height: auto; /* Maintain aspect ratio */
+    }
       /* TEAM */
       .card-img-top {
       height: 200px; /* Adjust as needed */
@@ -148,32 +149,32 @@
     <h6 class="ms-1 text-center">Why We Do It</h6>
     <h2 class="custom-heading text-center">Shelters and rescues are stacked and unable to control the rapid spread of cat overpopulation while local governments do not have enough data to understand where to allocate the resources that could help to tackle the problem. </h2>
     <h4 class="mt-4" style="text-align: center;">CAT OVERPOPULATION PROBLEM</h4>
-    <div class="container-reason">
+    <div class="container-cards">
     <div class="card-group">
       <div class="card">
-        <div class="card-body card-body-fact-one">
-          <h5 class="card-title card-title-facts text-center">500.000 - 1 m feral cats</h5>
-          <p class="text-normal text-center">Flatbush Cats, a nonprofit organization in Brooklyn, estimates that there are as many as half a million feral cats living in New York City. Many other organizations estimate it to be as high as 1 million.</p>
+        <div class="card-body card-body-fact-one" style="padding: 15% 15% 10% 15%;">
+          <h3 class="card-title-facts text-center">500.000 - 1 million<br> feral cats</h3>
+          <p class="body-normal text-center mt-4">Flatbush Cats, a nonprofit organization in Brooklyn, estimates that there are as many as half a million feral cats living in New York City. Many other organizations estimate it to be as high as 1 million.</p>
         </div>
       </div>
       <div class="card">
-        <div class="card-body card-body-fact-two">
-          <h5 class="card-title card-title-facts text-center">45.5% cat rescuers</h5>
-          <p class="text-normal text-center">According to a survey conducted by our team, 45.5% of cat rescuers have a major problem in accessing low-cost spay/neuter appts, and 21% of them say they can’t afford to treat sick cats before fixing them.</p>
+        <div class="card-body card-body-fact-two" style="padding: 15% 15% 10% 15%;">
+          <h3 class="card-title-facts text-center">45.5% cat<br> rescuers</h3>
+          <p class="body-normal text-center mt-4">According to a survey conducted by our team, 45.5% of cat rescuers have a major problem in accessing low-cost spay/neuter appts, and 21% of them say they can’t afford to treat sick cats before fixing them.</p>
         </div>
       </div>
     </div>
     <div class="card-group">
       <div class="card">
-        <div class="card-body card-body-fact-three">
-          <h5 class="card-title card-title-facts text-center">15% over humane<br>capacity</h5>
-          <p class="text-normal card-text-fact text-center">The ACC is 15% over its humane capacity for cats. In late July 2023, the ACC reached "critical capacity" and could only accept cat surrenders in emergency situations or if they were a safety risk.</p>
+        <div class="card-body card-body-fact-three" style="padding: 15% 15% 10% 15%;">
+          <h3 class="card-title-facts text-center">15% over humane<br>capacity</h3>
+          <p class="body-normal card-text-fact text-center mt-4">The ACC is 15% over its humane capacity for cats. In late July 2023, the ACC reached "critical capacity" and could only accept cat surrenders in emergency situations or if they were a safety risk.</p>
         </div>
       </div>
       <div class="card">
-        <div class="card-body card-body-fact-four">
-          <h5 class="card-title card-title-facts text-center">1.3 - 4 billion birds killed each year</h5>
-          <p class="text-normal text-center">According to All About Birds it is estimated that cats kill 1.3–4 billion birds each year in the U.S. alone, with 69% of these kills attributable to feral or unowned cats. </p>
+        <div class="card-body card-body-fact-four" style="padding: 15% 15% 10% 15%;">
+          <h3 class="card-title-facts text-center">1.3 - 4 billion birds<br>killed each year</h3>
+          <p class="body-normal text-center mt-4">According to All About Birds it is estimated that cats kill 1.3–4 billion birds each year in the U.S. alone, with 69% of these kills attributable to feral or unowned cats. </p>
         </div>
       </div>
     </div>
@@ -309,7 +310,7 @@
           <!-- headings -->
           <div class="heading-container">
             <h6 class="text-center">How It Works</h6>
-            <h2 class="text-center">With user-friendly, usable, and intuitive interface our platform offer unforgettable experience and fast access to resources. No need to fight for low-cost spay/neuter appointments!</h2>
+            <h2 class="text-center" style="margin-bottom: 60px;">With user-friendly, usable, and intuitive interface our platform offer unforgettable experience and fast access to resources. No need to fight for low-cost spay/neuter appointments!</h2>
           </div>
           <!-- two columns container -->
           <div class="row">
@@ -353,15 +354,15 @@
           <!-- ALEXA -->
           <div class="col-md-3 mb-4">
             <div class="card">
-              <img src="https://via.placeholder.com/300" class="card-img-top" alt="Image 1">
+              <img src="images/alexa.png" class="card-img-top" alt="Image 1">
               <div class="card-body">
                 <h5 class="card-title">Alexa Kyler</h5>
                 <p class="body-small">UX/UI Designer & Website Developer</p>
                 <div class="social-icons">
-                  <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
+                  <a href="https://www.linkedin.com/in/aleksandra-slomska-1039681b3/" target="_blank" aria-label="LinkedIn">
                     <img src="images/linkedin-pink.svg" height="32px" width="32px" class="img-fluid img-fluid-social" alt="Responsive Image">
                   </a>
-                  <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
+                  <a href="https://www.instagram.com/kion.the.lion.king/" target="_blank" aria-label="LinkedIn">
                     <img src="images/instagram-pink.svg" height="32px" width="32px" class="img-fluid img-fluid-social" alt="Responsive Image">
                   </a>
                 </div>
@@ -423,18 +424,14 @@
   <!-- first row: text section -->
   <div class="row">
     <div class="col-12 text-center">
-      <h6 class="text-muted">Join us</h6>
-     <h2>Are you genuinely interested in making a change? Join us! We welcome cats rescuers, birds and wildlife advocates, law makers, government representitives and more!</h2>
+      <h6  style="margin-bottom: 16px;">Join us</h6>
+      <h2>Are you genuinely interested in making a change? Join us! We welcome cats rescuers, birds and wildlife advocates, law makers, government representitives and more!</h2>
       <p class="body-normal" style="padding: 20px;">Join our project and help us with building it while sharing with us your knowledge, expertise, resources, and hands to work.</p>
     </div>
   </div>
-  <!-- second row: responsive full-width image -->
-  <div class="row">
-    <div class="col-12">
-      <img src="images/joinus.png" alt="Responsive Full-Width Image" class="full-width-img">
-    </div>
-  </div>
 </div>
+ <!-- responsive full-width image -->
+ <img src="images/join-us.png" class="img-fluid" alt="Full Width Image">
 
   <!------------------------------------------------------->    
   <!-- CONTACT -->
@@ -454,7 +451,7 @@
         <h5 style="text-align: center;">Contact Information</h5>
         <p class="body-large" style="color: #646AD9; font-weight: 600; text-align: center; text-decoration: none;">Please, e-mail us.</p>
         <h6 style="text-align: center; text-decoration: none;">Trapperaid Team</h6>
-        <p class="body-normal" style="text-align: center; text-decoration: underline;";>catcrisispossiblesolution@gmail.com</p>
+        <p href="mailto:example@example.com" class="body normal" style="text-align: center; text-decoration: underline;">catcrisispossiblesolution@gmail.com</p>
     </div>
   </section>
   </div>
@@ -474,48 +471,48 @@
             <img class="me-2" src="images/logo.png" height="48px" width="54px">
             Trapperaid
           </h6>
-          <p>
-            The change begins here
+          <p style="margin-left: 64px; color: white; margin-top: -12px;">
+            Join our colony. 
           </p>
         </div>
         <!-- grid column -->
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 mt-3">
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4" style="margin-top: 13px;">
           <!-- links -->
           <h6 class="text-uppercase fw-bold mb-4">
             General
           </h6>
           <p>
-            <a href="#!" class="text-reset">Home</a>
+            <a href="https://www.catcrisispossiblesolution.com" class="body-normal text-white">Home</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">About</a>
+            <a href="#!" class="body-normal text-white">About</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">Why We Do It</a>
+            <a href="#!" class="body-normal text-white">Why We Do It</a>
           </p>
         </div>
         <!-- grid column -->
         <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
           <!-- links -->
-          <h6 class="text-uppercase fw-bold mb-4">
+          <h6 class="text-uppercase fw-bold mb-4" style="margin-top: 13px;">
             Trapperaid
           </h6>
           <p>
-            <a href="#!" class="text-reset">How It Works</a>
+            <a href="#!" class="body-normal text-white">How It Works</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">Team</a>
+            <a href="#!" class="body-normal text-white">Team</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">Join us</a>
+            <a href="#!" class="body-normal text-white">Join us</a>
           </p>
         </div>
         <!-- grid column -->
         <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
           <!-- links -->
-          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-          <p>New York, NY 11102, US</p>
-          <p>
+          <h6 class="text-uppercase fw-bold mb-4" style="margin-top: 13px;">Contact</h6>
+          <p class="body-normal text-white">New York, NY 11102, US</p>
+          <p class="body-normal text-white">
             catcrisispossiblesolution@gmail.com
           </p>
         </div>
@@ -635,7 +632,7 @@ document.addEventListener("DOMContentLoaded", function () {
       let htmlContent = '';
       if (contentId === 'forone') {
         htmlContent = `
-          <h4>As a solo cat rescuer, you are at the forefront of trapping, neutering, and returning feral cats. YOU ARE OUR HERO!</h4>
+          <h4>As a <span style="text-decoration: underline; color: #0CB4AE; font-weight: 600;">solo cat rescuer</span>, you are at the forefront of trapping, neutering, and returning feral cats. YOU ARE OUR HERO!</h4>
            <div class="container mt-4">
            <div class="row">
            <!-- first column -->
@@ -650,14 +647,14 @@ document.addEventListener("DOMContentLoaded", function () {
          </div>
          <!-- second column -->
         <div class="col-md-6">
-         <img src="images/forcatsrescuers.png" alt="The man holding, kissing, cuddling the cat" class="responsive-img">
+         <img src="images/1.png" alt="The man holding, kissing, cuddling the cat" class="responsive-img">
         </div>
       </div>
      </div>
         `;
       } else if (contentId === 'fortwo') {
         htmlContent = `
-         <h4>As a shelter/rescue you are often unable to take in or treat cats in need. You need a help and assistance to make your beautiful mission to work. </h4>
+         <h4>As a <span style="text-decoration: underline; color: #646AD9; font-weight: 600;">shelter/rescue</span> you are often unable to take in or treat cats in need. You need a help and assistance to make your beautiful mission to work. </h4>
            <div class="container mt-4">
            <div class="row">
              <!-- First Column -->
@@ -672,21 +669,76 @@ document.addEventListener("DOMContentLoaded", function () {
       </div>
      <!-- second column -->
       <div class="col-md-6">
-        <img src="images/forcatsrescuers.png" alt="Responsive Image" class="responsive-img">
+        <img src="images/2.png" alt="Responsive Image" class="responsive-img">
       </div>
     </div>
   </div>        
         `;
       } else if (contentId === 'forthree') {
         htmlContent = `
-          <h3>Section Heading 3</h3>
-          <p>This is content for Services.</p>
+        <h4>As a<span style="text-decoration: underline; color: #002244; font-weight: 600;"> local government</span> you will get data that will help you to allocate the funds and finally tackle the cat crisis in your jurisdiction once and for good. </h4>
+           <div class="container mt-4">
+           <div class="row">
+             <!-- First Column -->
+          <div class="col-md-6">
+          <h6>STEPS TO BE TAKEN</h6>
+          <ul">
+          <li class="body-small">1. We will register city and public health officials on the platform and provide access to dashboards, data visualization tools, and reporting features. </li><br>
+          <li class="body-small">2. We will train your officials on interpreting public health data, managing alerts, coordinating  with TNR providers, and using resource allocation tools. </li><br>
+          <li class="body-small">4. We will start collecting and analyzing health-related data to monitor disease outbreaks, optimize resource distribution, and guide public health measures to enhance public health and safety outcomes. </li>
+        </ul>
+      </div>
+     <!-- second column -->
+      <div class="col-md-6">
+        <img src="images/3.png" alt="Responsive Image" class="responsive-img">
+      </div>
+    </div>
+  </div>        
         `;
       } else if (contentId === 'forfour') {
         htmlContent = `
-          <h3>Section Heading 4</h3>
-          <p>This is content for Contact.</p>
+     <h4>As <span style="text-decoration: underline; color: #3035A6; font-weight: 600;">a vet clinic</span> you will get data that will help you to allocate the funds and finally tackle the cat crisis in your jurisdiction once and for good.</h4>
+           <div class="container mt-4">
+           <div class="row">
+             <!-- First Column -->
+          <div class="col-md-6">
+          <h6>STEPS TO BE TAKEN</h6>
+          <ul">
+          <li class="body-small">1. We will register your vet clinic on the platform and help you list services, set pricing, and understand platform incentives.</li><br>
+          <li class="body-small">2. We will offer sessions to show your vets how to manage appointments, integrate with existing systems, and report data. </li><br>
+          <li class="body-small">3. Start using our services! Raise funds for your colony cats, book a holding place or a transport. Schedule the spay/neuter appointment, pay at the vet for spay/neuter and unexpected medial problems.</li><br>
+          <li class="body-small">4. We will collect data on TNR services provided by your clinic to track your impact and prove that you qualify for incentives. </li>
+        </ul>
+      </div>
+     <!-- second column -->
+      <div class="col-md-6">
+        <img src="images/4.png" alt="Responsive Image" class="responsive-img">
+      </div>
+    </div>
+  </div>        
         `;
+      } else if (contentId === 'forfive') {
+        htmlContent = `
+          <h4>As<span style="text-decoration: underline; color: #A6308C; font-weight: 600;"> a larger organization</span> you will get data that will help you to allocate the funds and finally tackle the cat crisis in your jurisdiction once and for good.</h4>
+           <div class="container mt-4">
+           <div class="row">
+             <!-- First Column -->
+          <div class="col-md-6">
+          <h6>STEPS TO BE TAKEN</h6>
+          <ul">
+          <li class="body-small">1. We will register your organization on the platform and integrate your management systems into ours. </li><br>
+          <li class="body-small">2. We will provide you training on data integration and coordination tools. </li><br>
+          <li class="body-small">3. We will monitor your data and adjust strategies as needed making sure your information is secure, easily accessible to you, and well-maintained. </li><br>
+          <li class="body-small">4. Let our team to raise the funds for your colony cats, book spay/neuter appointments, pay at the vet by using the funds or either wait for a Trapper to book your holding space or a transport. </li>
+        </ul>
+      </div>
+     <!-- second column -->
+      <div class="col-md-6">
+        <img src="images/5.png" alt="Responsive Image" class="responsive-img">
+      </div>
+    </div>
+  </div>        
+        `;      
       }
       contentArea.innerHTML = htmlContent;
     }

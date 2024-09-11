@@ -1,4 +1,4 @@
-/* GLOBALS */
+/************************** GLOBALS ***************************/
 
 html {
   padding: 0;
@@ -64,7 +64,7 @@ h6 {
   font-size: 1rem;
 }
 
-/* ABOUT */
+/************************** ABOUT ***************************/
 
 /* Navbar */
 
@@ -104,13 +104,11 @@ h6 {
   background-color: var(--blue);
 }
 
-
-
 .img-fluid {
 margin-top: -61px;
 }
 
-/*  Services Available to Users After Joining the Platform */
+/*  services available */
 
 .container-features {
   padding: 0px;
@@ -138,24 +136,15 @@ margin-top: -61px;
 }
 
 
-/*  WHY WE DO IT */
+/************************** WHY WE DO IT ***************************/
 
-.custom-heading {
-  font-size: 1.5rem;
-  max-width: 900px; /* Limits the width of the heading */
-  padding: 20px;  /* Adds padding on the sides */
-  margin: 0 auto;   /* Centers the heading horizontally */
-  text-align: center; /* Centers the text inside the heading */
-}
-
-.container-reason {
+.container-cards {
   margin-top: 60px;
 }
 
 .card-body-fact-one {
   background-color: var(--purple);
   color: var(--white);
-  padding: 15% 15% 10% 15%;
 }
 
 .card-body-fact-two {
@@ -177,11 +166,45 @@ margin-top: -61px;
 }
 
 .card-title-facts {
-  font-size: 2rem;
   font-weight: 600;
+  color: var(--white);
 }
 
 /************************** HOW CAN WE HELP ***************************/
+
+/* horizontal breadcrumbs */
+
+.breadcrumb-link {
+  text-decoration: none;
+  font-weight: 400; 
+  color: inherit; /* keeps default text color */
+  position: relative;
+  padding-bottom: 5px;
+}
+
+/* adding a custom underline effect */
+
+.breadcrumb-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 4px;
+  background-color: transparent; /* default color */
+  transition: width 0.3s ease, background-color 0.3s ease;
+  border-radius: 20px; 
+}
+
+/* active breadcrumb link will have an underline and change font weight */
+.breadcrumb-link.active {
+  font-weight: 600; /* semi-bold */
+}
+
+.breadcrumb-link.active::after {
+  width: 100%; 
+  background-color: currentColor; /* will take the text color */
+}
 
 /* breadcrumbs links */
 
@@ -319,7 +342,7 @@ margin-top: -61px;
   font-weight: 500;
 }
 
-/* Underline under the box - the user knows that the item was clicked */
+/* underline under the box - the user knows that the item was clicked */
 
 .breadcrumb-item-forone.active {
   border-bottom: 4px solid white;
@@ -351,17 +374,17 @@ ul {
 .container-section {
   margin-top: 100px;
   border-radius: 4px;
-  padding: 20px;
+  padding: 60px;
 }
 
-/* Remove default breadcrumb divider */
+
 .breadcrumb {
-  background: none; /* Remove the background */
-  padding: 0; /* Remove padding */
+  background: none;
+  padding: 0; 
 }
 
 .breadcrumb-item + .breadcrumb-item::before {
-  content: none; /* Remove the default divider */
+  content: none; /* remove the default divider */
 }
 
 .title-attention {
@@ -371,7 +394,7 @@ ul {
 }
 
 
-/* TEAM */
+/************************** TEAM ***************************/
 
 .card {
   border: none;
@@ -386,7 +409,7 @@ ul {
 }
 
 
-/* FOOTER */
+/************************** FOOTER ***************************/
 
 .footer {
   background-color: var(--purple); 
