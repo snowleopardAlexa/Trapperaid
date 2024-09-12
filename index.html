@@ -101,7 +101,7 @@
           <div class="container-about">
             <h6 style="margin-bottom: 16px;" class="ms-1">About</h6>
             <h1>Connecting individuals involved in Trap-Neuter-Return(TNR) enabling them access and offer essential services. </h1>
-            <p class="body-large" style="padding: 16px 16px 0px 0px;">Trapperaid is a platform that centralizes services (funds, holding space, transport) while providing the local governments an access to the data about the numbers of spayed/neutered cats, their treatment cost, and veterinary offices that offer discounted services to feral cats. </p>
+            <p class="body-large" style="padding: 16px 0px 0px 0px;">Trapperaid is a platform that centralizes services (funds, holding space, transport) while providing the local governments an access to the data about the numbers of spayed/neutered cats, their treatment cost, and veterinary offices that offer discounted services to feral cats. </p>
            </div>
         </div>
         <!-- column hidden on mobile (screen width < 768px) -->
@@ -114,12 +114,12 @@
      </div>
   
      <!-- LARGE SLOGAN-->
-     <div class="section" style="margin-top: 20px; background-color: #3035A6; padding: 32px;">
+     <div class="section" style="margin-top: 0px; background-color: #3035A6; padding: 32px;">
       <h3 style="color: white; text-align: center;">Every person willing to help feral cats can join Trapperaid!</h3>
      </div>
 
       <div class="container-members">
-        <h4 style="text-align: center;">AFTER BECOMING A MEMBER YOU WILL BE ABLE TO</h4>
+        <h4 style="text-align: center; margin-top: 20px;">AFTER BECOMING A MEMBER YOU WILL BE ABLE TO</h4>
       </div>
       <!--Services Available to Users After Joining the Platform-->
       <div class="container-features">
@@ -157,7 +157,7 @@
   <section id="section2">
   <div class="container-fluid" style="border-top: 10px solid #0cb4ae1a; border-bottom: 10px solid #0cb4ae1a;">
     <h6 style="margin-bottom: 16px;" class="ms-1 text-center">Why We Do It</h6>
-    <h2 style="font-weight: 600;" class="custom-heading text-center">Shelters and rescues are stacked and unable to control the rapid spread of cat overpopulation while local governments do not have enough data to understand where to allocate the resources that could help to tackle the problem. </h2>
+    <h2 style="font-weight: 600;" class="text-center">Shelters and rescues are stacked and unable to control the rapid spread of cat overpopulation while local governments do not have enough data to understand where to allocate the resources that could help to tackle the problem. </h2>
     <h4 style="text-align: center; margin-top: 40px;">CAT OVERPOPULATION PROBLEM</h4>
     <div class="container-cards">
     <div class="card-group">
@@ -326,14 +326,14 @@
           <!-- headings -->
           <div class="heading-container">
             <h6 style="margin-bottom: 16px;" class="text-center">How It Works</h6>
-            <h2 class="text-center" style="margin-bottom: 60px; font-weight: 600;">With user-friendly, usable, and intuitive interface our platform offer unforgettable experience and fast access to resources. No need to fight for low-cost spay/neuter appointments!</h2>
+            <h2 class="text-center" style="font-weight: 600;">With user-friendly, usable, and intuitive interface our platform offer unforgettable experience and fast access to resources. No need to fight for low-cost spay/neuter appointments!</h2>
           </div>
           <!-- two columns container -->
           <div class="row">
             <!-- first column: vertical breadcrumbs -->
             <div class="col-md-6">
               <div class="container-section">
-                <div class="breadcrumb-container">
+                <div class="breadcrumb-container-h">
                   <nav class="breadcrumb d-flex flex-column text-center" aria-label="breadcrumb">
                     <a class="breadcrumb-item breadcrumb-item-forone text-white active" style="font-size: 1.125rem" href="#" aria-current="page" data-content="forone">For Cat Rescuers</a>
                     <a class="breadcrumb-item breadcrumb-item-fortwo text-white" style="font-size: 1.125rem" href="#" data-content="fortwo">For Shelters/Rescues</a>
@@ -345,7 +345,7 @@
               </div>
             </div>
             <!-- second column: content area -->
-            <div class="col-md-6">
+            <div class="col-md-6" style="margin-top: 20px;">
               <div class="content-area" id="content-area">
               <!-- Content will be updated dynamically -->
             </div>
@@ -451,7 +451,7 @@
               <img src="https://via.placeholder.com/300" class="card-img-top" alt="Image 4">
               <div class="card-body">
                 <h5 class="card-title">Room for you!</h5>
-                <p class="body-small">Join our team.</p>
+                <p class="body-small">Join our colony.</p>
                 <div class="social-icons">
                   <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
                     <img src="images/linkedin-aqua.svg" height="32px" width="32px" class="img-fluid img-fluid-social" alt="Responsive Image">
@@ -669,12 +669,12 @@ document.addEventListener("DOMContentLoaded", function () {
       let htmlContent = '';
       if (contentId === 'forone') {
         htmlContent = `
-          <h4>As a <span style="text-decoration: underline; color: #0CB4AE; font-weight: 600;">solo cat rescuer</span>, you are at the forefront of trapping, neutering, and returning feral cats. YOU ARE OUR HERO!</h4>
+          <h4 style="text-align: center">As a <span style="text-decoration: underline; color: #0CB4AE; font-weight: 600;">solo cat rescuer</span>, you are at the forefront of trapping, neutering, and returning feral cats. YOU ARE OUR HERO!</h4>
            <div class="container mt-4">
            <div class="row">
            <!-- first column -->
            <div class="col-md-6">
-           <h6>STEPS TO BE TAKEN</h6>
+           <h6 style="text-align: center;">STEPS TO BE TAKEN</h6>
            <ul>
            <li class="body-small">1. Register on Trapperaid and pass the verification process.</li><br>
            <li class="body-small">2. Choose your role - Trapper, Host, Driver, Trapper Helper or all of them.</li><br>
@@ -691,13 +691,13 @@ document.addEventListener("DOMContentLoaded", function () {
         `;
       } else if (contentId === 'fortwo') {
         htmlContent = `
-         <h4>As a <span style="text-decoration: underline; color: #646AD9; font-weight: 600;">shelter/rescue</span> you are often unable to take in or treat cats in need. You need a help and assistance to make your beautiful mission to work. </h4>
+         <h4 style="text-align: center">As a <span style="text-decoration: underline; color: #646AD9; font-weight: 600;">shelter/rescue</span> you are often unable to take in or treat cats in need. You need a help and assistance to make your beautiful mission to work. </h4>
            <div class="container mt-4">
            <div class="row">
              <!-- First Column -->
           <div class="col-md-6">
-          <h6>STEPS TO BE TAKEN</h6>
-          <ul">
+          <h6 style="text-align: center">STEPS TO BE TAKEN</h6>
+          <ul>
           <li class="body-small">1. We will register your shelter/rescue on the platform and guide you on how to list resources, schedule services, and manage volunteers.</li><br>
           <li class="body-small">2. We will provide you training sessions on using the platform for coordination and data entry.</li><br>
           <li class="body-small">3. Start using our services! Raise funds for your colony cats, book a holding place or a transport. Schedule the spay/neuter appointment, pay at the vet for spay/neuter and unexpected medial problems.</li><br>
@@ -713,34 +713,35 @@ document.addEventListener("DOMContentLoaded", function () {
         `;
       } else if (contentId === 'forthree') {
         htmlContent = `
-        <h4>As a<span style="text-decoration: underline; color: #002244; font-weight: 600;"> local government</span> you will get data that will help you to allocate the funds and finally tackle the cat crisis in your jurisdiction once and for good. </h4>
+           <h4 style="text-align: center">As a <span style="text-decoration: underline; color: #0CB4AE; font-weight: 600;">solo cat rescuer</span>, you are at the forefront of trapping, neutering, and returning feral cats. YOU ARE OUR HERO!</h4>
            <div class="container mt-4">
            <div class="row">
-             <!-- First Column -->
-          <div class="col-md-6">
-          <h6>STEPS TO BE TAKEN</h6>
-          <ul">
-          <li class="body-small">1. We will register city and public health officials on the platform and provide access to dashboards, data visualization tools, and reporting features. </li><br>
-          <li class="body-small">2. We will train your officials on interpreting public health data, managing alerts, coordinating  with TNR providers, and using resource allocation tools. </li><br>
-          <li class="body-small">4. We will start collecting and analyzing health-related data to monitor disease outbreaks, optimize resource distribution, and guide public health measures to enhance public health and safety outcomes. </li>
-        </ul>
+           <!-- first column -->
+           <div class="col-md-6">
+           <h6 style="text-align: center;">STEPS TO BE TAKEN</h6>
+           <ul>
+           <li class="body-small">1. Register on Trapperaid and pass the verification process.</li><br>
+           <li class="body-small">2. Choose your role - Trapper, Host, Driver, Trapper Helper or all of them.</li><br>
+           <li class="body-small">3. Either fill up information about your cat colony, holding space or a transport you offer.</li><br>
+           <li class="body-small">4. Let our team to raise the funds for your colony cats, book spay/neuter appointments, pay at the vet by using the funds or either wait for a Trapper to book your holding space or a transport. </li>
+          </ul>
+         </div>
+         <!-- second column -->
+        <div class="col-md-6">
+         <img src="images/1.png" alt="The man holding, kissing, cuddling the cat" class="responsive-img">
+        </div>
       </div>
-     <!-- second column -->
-      <div class="col-md-6">
-        <img src="images/3.png" alt="Responsive Image" class="responsive-img">
-      </div>
-    </div>
-  </div>        
+     </div>     
         `;
       } else if (contentId === 'forfour') {
         htmlContent = `
-     <h4>As <span style="text-decoration: underline; color: #3035A6; font-weight: 600;">a vet clinic</span> you will get data that will help you to allocate the funds and finally tackle the cat crisis in your jurisdiction once and for good.</h4>
+       <h4 style="text-align: center">As <span style="text-decoration: underline; color: #3035A6; font-weight: 600;">a vet clinic</span> you will get data that will help you to allocate the funds and finally tackle the cat crisis in your jurisdiction once and for good.</h4>
            <div class="container mt-4">
            <div class="row">
              <!-- First Column -->
           <div class="col-md-6">
-          <h6>STEPS TO BE TAKEN</h6>
-          <ul">
+          <h6 style="text-align: center">STEPS TO BE TAKEN</h6>
+          <ul>
           <li class="body-small">1. We will register your vet clinic on the platform and help you list services, set pricing, and understand platform incentives.</li><br>
           <li class="body-small">2. We will offer sessions to show your vets how to manage appointments, integrate with existing systems, and report data. </li><br>
           <li class="body-small">3. Start using our services! Raise funds for your colony cats, book a holding place or a transport. Schedule the spay/neuter appointment, pay at the vet for spay/neuter and unexpected medial problems.</li><br>
@@ -756,13 +757,13 @@ document.addEventListener("DOMContentLoaded", function () {
         `;
       } else if (contentId === 'forfive') {
         htmlContent = `
-          <h4>As<span style="text-decoration: underline; color: #A6308C; font-weight: 600;"> a larger organization</span> you will get data that will help you to allocate the funds and finally tackle the cat crisis in your jurisdiction once and for good.</h4>
+          <h4 style="text-align: center">As<span style="text-decoration: underline; color: #A6308C; font-weight: 600;"> a larger organization</span> you will get data that will help you to allocate the funds and finally tackle the cat crisis in your jurisdiction once and for good.</h4>
            <div class="container mt-4">
            <div class="row">
              <!-- First Column -->
           <div class="col-md-6">
-          <h6>STEPS TO BE TAKEN</h6>
-          <ul">
+          <h6 style="text-align: center">STEPS TO BE TAKEN</h6>
+          <ul>
           <li class="body-small">1. We will register your organization on the platform and integrate your management systems into ours. </li><br>
           <li class="body-small">2. We will provide you training on data integration and coordination tools. </li><br>
           <li class="body-small">3. We will monitor your data and adjust strategies as needed making sure your information is secure, easily accessible to you, and well-maintained. </li><br>

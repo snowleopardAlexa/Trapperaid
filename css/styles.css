@@ -77,6 +77,9 @@ h6 {
   html {
     font-size: 16px; /* Reduce root font size for tablets */
   }
+  h2 {
+    font-size: 1.5rem;
+  }
 }
 
 @media (max-width: 576px) {
@@ -310,37 +313,6 @@ h6 {
 }
 
 /************************** HOW IT WORKS ***************************/
-
-.container-work {
-  margin-top: 64px;
-}
-
-.row-work {
-  margin-top: 32px;
-}
-
-.heading {
-  color: var(--dark-blue);
-  margin-bottom: 10%;
-}
-
-.bold-heading {
-  font-weight: bold;
-  margin-top: 7%;
-}
-
-.col-help {
-  margin-top: 32px;
-}
-
-.img-fluid-help {
-  margin-top: 32px;
-}
-
-.row-work {
-  margin-top: 80px;
-}
-
 /* vertical breadcrumbs */
 
 .breadcrumb-item {
@@ -411,9 +383,8 @@ ul {
 .container-section {
   margin-top: 100px;
   border-radius: 4px;
-  padding: 60px;
+  padding: 0px;
 }
-
 
 .breadcrumb {
   background: none;
@@ -422,12 +393,6 @@ ul {
 
 .breadcrumb-item + .breadcrumb-item::before {
   content: none; /* remove the default divider */
-}
-
-.title-attention {
-  font-size: 1rem;
-  color: var(--red);
-  text-decoration: none;
 }
 
 
