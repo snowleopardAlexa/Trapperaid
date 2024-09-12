@@ -202,6 +202,7 @@
     <h2 style="font-weight: 600;" class="text-center">Solo cat rescuers, shelters, rescues, local governments, veterinary clinics, and rescue-related cat organizations can benefit from Trapperaid platform.</h2>
     <!--breadcrumb navigation-->
      <nav aria-label="breadcrumb" style="margin-top: 32px";>
+      <div id="breadcrumb-horizontal">
       <ul class="breadcrumb breadcrumb-horizontal d-flex justify-content-center">
         <li class="breadcrumb-item breadcrumb-item-one body-normal"><a href="#" data-target="one" class="breadcrumb-link">Cat Rescuers</a></li>
         <li class="breadcrumb-item breadcrumb-item-two body-normal"><a href="#" data-target="two" class="breadcrumb-link">Shelters/Rescues</a></li>
@@ -209,6 +210,7 @@
         <li class="breadcrumb-item breadcrumb-item-four body-normal"><a href="#" data-target="four" class="breadcrumb-link">Veterinary Clinics</a></li>
         <li class="breadcrumb-item breadcrumb-item-five body-normal"><a href="#" data-target="five" class="breadcrumb-link">Larger Organizations</a></li>
       </ul>
+    </div>
     </nav>
     <!-- content section -->
     <!-- Cat Rescuers Content -->
@@ -333,6 +335,7 @@
           <div class="row">
             <!-- first column: vertical breadcrumbs -->
             <div class="col-md-6">
+              <div id="breadcrumb-vertical">
                 <div class="breadcrumb-container" style="margin-bottom: 40px;">
                   <nav class="breadcrumb-vertical d-flex flex-column text-center" aria-label="breadcrumb">
                     <a class="breadcrumb-item breadcrumb-item-forone text-white active" style="font-size: 1.125rem" href="#" aria-current="page" data-content="forone">For Cat Rescuers</a>
@@ -342,6 +345,7 @@
                     <a class="breadcrumb-item breadcrumb-item-forfive text-white" style="font-size: 1.125rem" href="#" data-content="forfive">For Larger Organizations</a>
                   </nav>
                 </div>
+              </div>
             </div>
             <!-- second column: content area -->
             <div class="column-breadcrumbs-vertical col-md-6" style="margin-top: 0px">
@@ -550,7 +554,7 @@
           <h6 class="text-uppercase fw-bold mb-4" style="margin-top: 13px;">Contact</h6>
           <p class="body-normal text-white">New York, NY 11102, US</p>
           <p class="body-normal text-white">
-            catcrisispossiblesolution@gmail.com
+            trapperaidcatcrisissolution@gmail.com
           </p>
         </div>
       </div>
@@ -589,7 +593,7 @@
 <!-- BREADCRUMBS HORIZONTAL -->
 <script>
 // Select all breadcrumb links
-const breadcrumbLinks = document.querySelectorAll('.breadcrumb-link');
+const breadcrumbLinks = document.querySelectorAll('#breadcrumb-horizontal .breadcrumb-link');
 
 // Function to show content based on clicked breadcrumb
 breadcrumbLinks.forEach(link => {
@@ -610,11 +614,10 @@ breadcrumbLinks.forEach(link => {
   });
 });
 
-
-// Breadcrumbs links colors 
+// breadcrumbs links colors 
 document.addEventListener("DOMContentLoaded", function () {
   // Select all breadcrumb links
-  const breadcrumbLinks = document.querySelectorAll('.breadcrumb-link');
+  const breadcrumbLinks = document.querySelectorAll('#breadcrumb-horizontal .breadcrumb-link');
 
   // Function to handle click on each breadcrumb link
   breadcrumbLinks.forEach(link => {
@@ -646,7 +649,7 @@ document.addEventListener("DOMContentLoaded", function () {
 <!-- BREADCRUMBS VERTICAL -->
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    const breadcrumbLinks = document.querySelectorAll('.breadcrumb-item');
+    const breadcrumbLinks = document.querySelectorAll('#breadcrumb-vertical .breadcrumb-item');
     const contentArea = document.getElementById('content-area');
 
     // function to update content
