@@ -86,6 +86,7 @@ h6 {
   html {
     font-size: 14px; /* Small screens, like mobile phones */
   }
+  
 }
 
 /* adjust padding for mobile screens (max-width: 767px) */
@@ -280,7 +281,7 @@ h6 {
   position: relative;
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
   padding-left: 30px; /* Adjust based on icon size */
 }
 
@@ -313,8 +314,8 @@ h6 {
 }
 
 /************************** HOW IT WORKS ***************************/
-/* vertical breadcrumbs */
 
+/* vertical breadcrumbs */
 .breadcrumb-item {
   margin-bottom: 1px;
   border-radius: 4px;
@@ -383,7 +384,6 @@ ul {
 .container-section {
   margin-top: 100px;
   border-radius: 4px;
-  padding: 0px;
 }
 
 .breadcrumb {
