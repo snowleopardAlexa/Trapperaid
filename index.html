@@ -61,34 +61,31 @@
           <img src="/images/logo.png" alt="Logo" width="46" height="40" class="d-inline-block align-text-center ms-4 me-2">
           Trapperaid
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler me-3" type="button" style ="background-color: white; border: none; border-radius: 0px;" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto mx-4">
+          <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active"  aria-current="page" href="#section1">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#section2">Why We Do It</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Why We Do It</a>
+              <a class="nav-link" href="#section3">How Can We Help</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">How Can We Help</a>
+              <a class="nav-link" href="#section4">How It Works</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">How It Works</a>
+              <a class="nav-link" href="#section5">Team</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Team</a>
+              <a class="nav-link" href="#section6">Join us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Join us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#section7">Contact</a>
             </li>
           </ul>
         </div>
@@ -97,6 +94,7 @@
 
     <!------------------------------------------------------->   
     <!-- ABOUT -->
+    <section id="section1">
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-6">
@@ -107,20 +105,24 @@
            </div>
         </div>
         <!-- column hidden on mobile (screen width < 768px) -->
-        <div class="col-md-6 d-none d-md-block">
+        <div class="col-md-6 d-flex justify-content-center align-items-center">
           <div class="container">
-            <img src="/images/hero-4.png" class="img-fluid" alt="The man and the woman facing forward smiling, gradient backgrounds blue and green, surrounded by icons.">
+            <img src="/images/hero-4.png" class="img-fluid d-none d-md-block" alt="The man and the woman facing forward smiling, gradient backgrounds blue and green, surrounded by icons.">
         </div>
         </div>
       </div>
-      <div class="" style="margin-top: 40px; background-color: #646AD9;">
-         <h3 style="color: white; text-align: center;">Every person willing to help feral cats can join Trapperaid!</h3>
-       </div>
-       <div class="container-md container-member">
+     </div>
+  
+     <!-- LARGE SLOGAN-->
+     <div class="section" style="margin-top: 20px; background-color: #3035A6; padding: 32px;">
+      <h3 style="color: white; text-align: center;">Every person willing to help feral cats can join Trapperaid!</h3>
+     </div>
+
+      <div class="container-members">
         <h4 style="text-align: center;">AFTER BECOMING A MEMBER YOU WILL BE ABLE TO</h4>
       </div>
       <!--Services Available to Users After Joining the Platform-->
-      <div class="container-md container-features">
+      <div class="container-features">
         <div class="row">
           <div class="col-sm-4 mb-3 mb-sm-0">
             <div class="card card-feature p-4 text-center">
@@ -148,11 +150,12 @@
           </div>
         </div>
       </div>
-  </div>
-
+    </section> 
+  
   <!------------------------------------------------------->   
   <!-- WHY WE DO IT -->
-  <div class="container-fluid" style="background-color: #0cb4ae1a;">
+  <section id="section2">
+  <div class="container-fluid" style="border-top: 10px solid #0cb4ae1a; border-bottom: 10px solid #0cb4ae1a;">
     <h6 style="margin-bottom: 16px;" class="ms-1 text-center">Why We Do It</h6>
     <h2 style="font-weight: 600;" class="custom-heading text-center">Shelters and rescues are stacked and unable to control the rapid spread of cat overpopulation while local governments do not have enough data to understand where to allocate the resources that could help to tackle the problem. </h2>
     <h4 style="text-align: center; margin-top: 40px;">CAT OVERPOPULATION PROBLEM</h4>
@@ -187,9 +190,11 @@
     </div>
   </div>
   </div>
+</section>
 
   <!------------------------------------------------------->    
   <!-- HOW CAN WE HELP -->
+  <section id="section3">
   <div class="container-fluid bg-white">
     <h6 style="margin-bottom: 16px;" class="ms-1">How Can We Help</h6>
     <h2 style="font-weight: 600;" class="text-center">Solo cat rescuers, shelters, rescues, local governments, veterinary clinics, and rescue-related cat organizations can benefit from Trapperaid platform.</h2>
@@ -220,12 +225,12 @@
           </div>
           <!-- second column -->
           <div class="col-md-6">
-            <img src="images/catrescuer.png" class="img-fluid img-fluid-help" alt="Responsive Image">
+            <img src="images/catrescuer-new.png" class="img-fluid img-fluid-help" alt="Responsive Image">
           </div>
         </div>
       </div>
     </div>
-
+ 
     <!-- Shelters/Rescues Content -->
     <div id="two" class="content-section">
       <div class="container">
@@ -241,11 +246,12 @@
           </div>
           <!-- second column -->
           <div class="col-md-6">
-            <img src="images/sheltersrescues.png" class="img-fluid img-fluid-help" alt="Responsive Image">
+            <img src="images/shelters-new.png" class="img-fluid img-fluid-help" alt="Responsive Image">
           </div>
         </div>
       </div>
     </div>
+  </section> 
     
     <!-- Local Governments Content -->
     <div id="three" class="content-section">
@@ -262,14 +268,15 @@
                 </div>
                 <!-- second column -->
                 <div class="col-md-6">
-                  <img src="images/governments.png" class="img-fluid img-fluid-help" alt="Responsive Image">
+                  <img src="images/governments-new.png" class="img-fluid img-fluid-help" alt="Responsive Image">
                 </div>
               </div>
             </div>
          </div>
+        </section> 
 
     <!-- Vets Clinics -->
-    <div id="four" class="content-section">
+     <div id="four" class="content-section">
            <div class="container">
             <div class="row">
               <!-- first column -->
@@ -283,7 +290,7 @@
               </div>
               <!-- second column -->
               <div class="col-md-6">
-                <img src="images/vetsclinics.png" class="img-fluid img-fluid-help" alt="Responsive Image">
+                <img src="images/vetsclinics-new.png" class="img-fluid img-fluid-help" alt="Responsive Image">
               </div>
             </div>
           </div>
@@ -304,16 +311,18 @@
                 </div>
                 <!-- second column -->
                 <div class="col-md-6">
-                  <img src="images/largeorgs.png" class="img-fluid img-fluid-help" alt="Responsive Image">
+                  <img src="images/largeorgs-new.png" class="img-fluid img-fluid-help" alt="Responsive Image">
                 </div>
               </div>
             </div>
         </div>
        </div>
+      </section> 
 
      <!------------------------------------------------------->  
      <!-- HOW IT WORKS -->
-        <div class="container-fluid" style="background-color: #0cb4ae1a;">
+      <section id="section4">
+        <div class="container-fluid" style="border-top: 10px solid #0cb4ae1a; border-bottom: 10px solid #0cb4ae1a;">
           <!-- headings -->
           <div class="heading-container">
             <h6 style="margin-bottom: 16px;" class="text-center">How It Works</h6>
@@ -341,13 +350,13 @@
               <!-- Content will be updated dynamically -->
             </div>
           </div>
-          <!-- additional small heading -->
-             <h6 class="bold-heading title-attention text-center">ATTENTION: We never ask for the exact location of a cat colony! We only ask for a general area like Ridgewood Queens for data tracking and success rate purpose to better understand which areas need support the most.</h6>
           </div>
           </div>
+        </section>
 
    <!------------------------------------------------------->    
     <!-- TEAM -->
+    <section id="section5">
     <div class="container-fluid" style="border-bottom: 10px solid #0cb4ae1a;">
       <!-- top section -->
       <div class="text-center mb-4">
@@ -406,6 +415,21 @@
               </div>
             </div>
           </div>
+          <!-- ALEX -->
+          <div class="col-md-3 mb-4">
+            <div class="card">
+              <img src="https://via.placeholder.com/300" class="card-img-top" alt="Image 3">
+              <div class="card-body">
+                <h5 class="card-title">Alexander Kyler</h5>
+                <p class="body-small">Attorney</p>
+                <div class="social-icons">
+                  <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
+                    <img src="images/linkedin-purple.svg" height="32px" width="32px" class="img-fluid img-fluid-social" alt="Responsive Image">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
           <!-- ANNA -->
           <div class="col-md-3 mb-4">
             <div class="card">
@@ -421,12 +445,29 @@
               </div>
             </div>
           </div>
+           <!-- ROOM FOR YOU -->
+           <div class="col-md-3 mb-4">
+            <div class="card">
+              <img src="https://via.placeholder.com/300" class="card-img-top" alt="Image 4">
+              <div class="card-body">
+                <h5 class="card-title">Room for you!</h5>
+                <p class="body-small">Join our team.</p>
+                <div class="social-icons">
+                  <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
+                    <img src="images/linkedin-aqua.svg" height="32px" width="32px" class="img-fluid img-fluid-social" alt="Responsive Image">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+  </section>
 
   <!------------------------------------------------------->     
   <!-- JOIN US -->
+  <section id="section6">
   <div class="container-fluid">
   <!-- first row: text section -->
   <div class="row">
@@ -439,9 +480,11 @@
 </div>
  <!-- responsive full-width image -->
  <img src="images/join-us.png" class="img-fluid" alt="Full Width Image">
+</section>
 
   <!------------------------------------------------------->    
   <!-- CONTACT -->
+  <section id="section7">
   <div class="container-fluid">
   <!-- first row -->
   <div class="row">
@@ -462,26 +505,16 @@
     </div>
   </section>
   </div>
+</section> 
 
 <!------------------------------------------------------->  
 <!-- Footer -->
 <footer class="text-center text-lg-start bg-body-tertiary">
   <!-- section: links  -->
-  <section class="" style="padding: 20px; background-color: #646AD9;">
+  <section class="" style="padding: 0px 20px; background-color: #646AD9; padding: 20px;">
     <div class="container text-center text-md-start mt-5">
       <!-- grid row -->
       <div class="row mt-3">
-        <!-- grid column -->
-        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-          <!-- content -->
-          <h6 class="body-normal" style="text-decoration: none; color: white;">
-            <img class="me-2" src="images/logo.png" height="48px" width="54px">
-            Trapperaid
-          </h6>
-          <p style="margin-left: 64px; color: white; margin-top: -12px;">
-            Join our colony. 
-          </p>
-        </div>
         <!-- grid column -->
         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4" style="margin-top: 13px;">
           <!-- links -->
@@ -489,13 +522,10 @@
             General
           </h6>
           <p>
-            <a href="https://www.catcrisispossiblesolution.com" class="body-normal text-white">Home</a>
+            <a href="#section1" class="body-normal text-white">About</a>
           </p>
           <p>
-            <a href="#!" class="body-normal text-white">About</a>
-          </p>
-          <p>
-            <a href="#!" class="body-normal text-white">Why We Do It</a>
+            <a href="#section2" class="body-normal text-white">Why We Do It</a>
           </p>
         </div>
         <!-- grid column -->
@@ -505,13 +535,13 @@
             Trapperaid
           </h6>
           <p>
-            <a href="#!" class="body-normal text-white">How It Works</a>
+            <a href="#section3" class="body-normal text-white">How It Works</a>
           </p>
           <p>
-            <a href="#!" class="body-normal text-white">Team</a>
+            <a href="#section4" class="body-normal text-white">Team</a>
           </p>
           <p>
-            <a href="#!" class="body-normal text-white">Join us</a>
+            <a href="#section5" class="body-normal text-white">Join us</a>
           </p>
         </div>
         <!-- grid column -->

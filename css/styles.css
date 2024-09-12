@@ -17,6 +17,14 @@ body {
   background-color: var(--white);
 }
 
+.container-members {
+  padding: 5% 5% 5% 5%;
+}
+
+.container-features {
+  margin-bottom: 32px;
+}
+
 /* headings */
 
 h1 {
@@ -73,7 +81,7 @@ h6 {
 
 @media (max-width: 576px) {
   html {
-    font-size: 12px; /* Small screens, like mobile phones */
+    font-size: 14px; /* Small screens, like mobile phones */
   }
 }
 
@@ -102,7 +110,6 @@ h6 {
 }
 
 /************************** ABOUT ***************************/
-
 /* Navbar */
 
 .navbar .container-fluid {
@@ -131,18 +138,8 @@ h6 {
   color: var(--white);
 }
 
-.container-md {
-  padding: 60px;
-}
-
-.container-hero {
-  margin-top: 20px;
-  padding: 30px;
-  background-color: var(--blue);
-}
-
-.img-fluid {
-margin-top: -61px;
+.navbar-collapse {
+ text-align: center;
 }
 
 /*  services available */
@@ -156,6 +153,7 @@ margin-top: -61px;
   background-attachment: scroll;
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .card-body-search {
@@ -163,6 +161,7 @@ margin-top: -61px;
   background-attachment: scroll;
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .card-body-vets {
@@ -170,6 +169,7 @@ margin-top: -61px;
   background-attachment: scroll;
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 
