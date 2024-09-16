@@ -153,7 +153,7 @@ h6 {
 }
 
 .card-body-cat {
-  background-image: url('images/cat-bg.png');
+  background-image: url('/images/cat-bg.png');
   background-attachment: scroll;
   background-size: contain;
   background-repeat: no-repeat;
@@ -161,7 +161,7 @@ h6 {
 }
 
 .card-body-search {
-  background-image: url('images/search-bg.png');
+  background-image: url('/images/search-bg.png');
   background-attachment: scroll;
   background-size: contain;
   background-repeat: no-repeat;
@@ -169,7 +169,7 @@ h6 {
 }
 
 .card-body-vets {
-  background-image: url('images/vets-bg.png');
+  background-image: url('/images/vets-bg.png');
   background-attachment: scroll;
   background-size: contain;
   background-repeat: no-repeat;
@@ -293,24 +293,24 @@ h6 {
   transform: translateY(-50%);
   width: 20px; /* Adjust size based on your icon */
   height: 20px; /* Adjust size based on your icon */
-  background: url('images/aqua.svg') no-repeat center center;
+  background: url('/images/aqua.svg') no-repeat center center;
   background-size: contain; /* Ensures the entire icon is visible */
 }
 
 .icon-list-two li::before {
-  background: url('images/purple.svg') no-repeat center center;
+  background: url('/images/purple.svg') no-repeat center center;
 }
 
 .icon-list-three li::before {
-  background: url('images/darkblue.svg') no-repeat center center;
+  background: url('/images/darkblue.svg') no-repeat center center;
 }
 
 .icon-list-four li::before {
-  background: url('images/blue.svg') no-repeat center center;
+  background: url('/images/blue.svg') no-repeat center center;
 }
 
 .icon-list-five li::before {
-  background: url('images/pink.svg') no-repeat center center;
+  background: url('/images/pink.svg') no-repeat center center;
 }
 
 /************************** HOW IT WORKS ***************************/
