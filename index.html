@@ -10,6 +10,18 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/colors.css">
+    <link rel="stylesheet" href="css/breadcrumbs.css">
+    <!--Breadcrumb horizontal-->
+    <style>
+      /* Hide all content sections by default */
+      .content-section {
+        display: none;
+      }
+      /* Show only the active content section */
+      .content-section.active {
+        display: block;
+      }
+    </style>
   </head>
   <body>
 
@@ -109,33 +121,162 @@
     <h6 class="ms-1 text-center">Why We Do It</h6>
     <h2 class="text-center">Shelters and rescues are stacked and unable to control the rapid spread of cat overpopulation while local governments do not have enough data to understand where to allocate the resources that could help to tackle the problem. </h2>
     <h4 class="mt-4">CAT OVERPOPULATION PROBLEM</h4>
-    <div class="card-group">
+    <div class="card-group card-group-first">
       <div class="card">
         <div class="card-body card-body-fact-one">
-          <h5 class="card-title text-center">500.000 - 1 m feral cats</h5>
+          <h5 class="card-title card-title-facts text-center">500.000 - 1 m feral cats</h5>
           <p class="card-text text-center">Flatbush Cats, a nonprofit organization in Brooklyn, estimates that there are as many as half a million feral cats living in New York City. Many other many organizations estimate it to be as high as 1 million.</p>
         </div>
       </div>
       <div class="card">
-        <div class="card-body card-fact-two">
-          <h5 class="card-title text-center">45.5% cat rescuers</h5>
+        <div class="card-body card-body-fact-two">
+          <h5 class="card-title card-title-facts text-center">45.5% cat rescuers</h5>
           <p class="card-text text-center">According to a survey conducted by our team, 45.5% of cat rescuers have a major problem in accessing low-cost spay/neuter appts, and 21% of them say they can’t afford to treat sick cats before fixing them.</p>
         </div>
       </div>
     </div>
     <div class="card-group">
       <div class="card">
-        <div class="card-body card-fact-three">
-          <h5 class="card-title text-center">15% over capacity</h5>
+        <div class="card-body card-body-fact-three">
+          <h5 class="card-title card-title-facts text-center">15% over capacity</h5>
           <p class="card-text card-text-fact text-center">The ACC is 15% over its humane capacity for cats. In late July 2023, the ACC reached "critical capacity" and could only accept cat surrenders in emergency situations or if they were a safety risk.</p>
         </div>
       </div>
       <div class="card">
-        <div class="card-body card-fact-four">
-          <h5 class="card-title text-center">1.3 - 4 billion birds killed each year</h5>
+        <div class="card-body card-body-fact-four">
+          <h5 class="card-title card-title-facts text-center">1.3 - 4 billion birds killed each year</h5>
           <p class="card-text text-center">According to All About Birds it is estimated that cats kill 1.3–4 billion birds each year in the U.S. alone, with 69% of these kills attributable to feral or unowned cats. </p>
         </div>
       </div>
+    </div>
+  </div>
+
+  <!--How Can We Help-->
+  <div class="container-fluid container-help bg-white">
+    <h6 class="ms-1">How Can We Help</h6>
+    <h2 class="text-center">Solo cat rescuers, shelters, rescues, local governments, veterinary clinics, and rescue-related cat organizations can benefit from Trapperaid platform.</h2>
+    
+    <!--Breadcrumb navigation-->
+     <nav aria-label="breadcrumb">
+      <ol class="breadcrumb d-flex justify-content-center">
+        <li class="breadcrumb-item breadcrumb-item-catsrescuers"><a href="#" data-target="catrescuers" class="breadcrumb-link">Cat Rescuers</a></li>
+        <li class="breadcrumb-item breadcrumb-item-sheltersrescues"><a href="#" data-target="sheltersrescues" class="breadcrumb-link">Shelters/Rescues</a></li>
+        <li class="breadcrumb-item breadcrumb-item-governments"><a href="#" data-target="governments" class="breadcrumb-link">Local Governments</a></li>
+        <li class="breadcrumb-item breadcrumb-item-vetsclinics"><a href="#" data-target="vetsclinics" class="breadcrumb-link">Vets Clinics</a></li>
+        <li class="breadcrumb-item breadcrumb-item-largeorgs"><a href="#" data-target="largeorgs" class="breadcrumb-link">Large Organizations</a></li>
+      </ol>
+    </nav>
+    <!-- Content section -->
+    <div id="catrescuers" class="content-section active">
+      <!-- Cat Rescuers Content -->
+      <div class="container">
+        <div class="row">
+          <!-- First Column -->
+          <div class="col-md-6">
+            <h2>Upon registering to Trapperaid, solo cats rescuers can offer and get access to essential resources:</h2>
+            <ul class="icon-list">
+              <li>Funds for spaying/neutering colony cats and covering their medical treatments. </li>
+              <li>Holding spaces for cats before and after the surgery. </li>
+              <li>Transport for cats to veterinary appointments, and pick up/drop off at the Trapper’s convenience. </li>
+              <li>Help in trapping colony cats.</li>
+            </ul>
+          </div>
+    
+          <!-- Second Column -->
+          <div class="col-md-6">
+            <img src="images/catrescuer.png" class="img-fluid" alt="Responsive Image">
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div id="sheltersrescues" class="content-section">
+      <!-- Shelters/Rescues Content -->
+      <div class="container">
+        <div class="row">
+          <!-- First Column -->
+          <div class="col-md-6">
+            <h2>Trapperaid can reduce the cat population and take burden from shelters/rescues that can’t accept more cats. </h2>
+            <ul class="icon-list icon-list-sheltersrescues">
+              <li>Resource allocation: Trapperaid will provide list of available traps, transport options, and holding spaces, streamlining collaboration among rescues, TNR-certified individuals, and vetted volunteers.</li>
+              <li>Service Scheduling: Use the platform to schedule TNR services at vet clinics and coordinate with volunteers for trapping, transport, and aftercare.</li>
+              <li>Data Tracking: Record when, where, and what TNR services are being used, and by whom (rescue or TNR-certified individual), to quantify rescue allocation and support funding allocation.</li>
+            </ul>
+          </div>
+    
+          <!-- Second Column -->
+          <div class="col-md-6">
+            <img src="images/sheltersrescues.png" class="img-fluid" alt="Responsive Image">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="governments" class="content-section">
+            <!-- Local Governments Content -->
+            <div class="container">
+              <div class="row">
+                <!-- First Column -->
+                <div class="col-md-6">
+                  <h2>Trapperaid can deliver data to local governments that would be able to understand where and how to allocate the resources.</h2>
+                  <ul class="icon-list icon-list-governments">
+                    <li>Data-Driven Decision Making:  Use the platform’s centralized data to make informed decisions on resource allocation, public health strategies, and budget planning.</li>
+                    <li>Monitoring and Reporting:  Access regular reports that outline TNR activities, costs, and impact to ensure city resources are utilized efficiently </li>
+                    <li>Collaboration and Partnerships:  Work with TNR organizations, vet clinics, and community members to enhance TNR efforts and address the feral cat population challenge holistically.</li>
+                  </ul>
+                </div>
+          
+                <!-- Second Column -->
+                <div class="col-md-6">
+                  <img src="images/governments.png" class="img-fluid" alt="Responsive Image">
+                </div>
+              </div>
+            </div>
+    </div>
+  
+    <div id="vetsclinics" class="content-section">
+           <!-- Vets Clinics -->
+           <div class="container">
+            <div class="row">
+              <!-- First Column -->
+              <div class="col-md-6">
+                <h2>Register to Trapperaid as a vet clinic, faciliate your scheduling process with us, and get potential tax breaks.  </h2>
+                <ul class="icon-list icon-list-vetsclinics">
+                  <li>Vets can register their clinics and services on the platform, listing the discounted TNR services they provide. </li>
+                  <li>Vets will receive service requests directly through the platform, streamlining the process of scheduling appointments for TNR-certified  individuals and rescues. </li>
+                  <li>Potential tax incentives or subsidies for vet clinicts that join the standardized pricing model, thus expanding the availability of discounted TNR services. </li>
+                </ul>
+              </div>
+        
+              <!-- Second Column -->
+              <div class="col-md-6">
+                <img src="images/vetsclinics.png" class="img-fluid" alt="Responsive Image">
+              </div>
+            </div>
+          </div>
+    </div>
+
+    <div id="largeorgs" class="content-section">
+            <!-- Large Organizations -->
+            <div class="container">
+              <div class="row">
+                <!-- First Column -->
+                <div class="col-md-6">
+                  <h2>Trapperaid can reduce the cat population and take burden from shelters/rescues that can’t accept more cats. </h2>
+                  <ul class="icon-list icon-list-largeorgs">
+                    <li>Resource allocation: Trapperaid will provide list of available traps, transport options, and holding spaces, streamlining collaboration among rescues, TNR-certified individuals, and vetted volunteers.</li>
+                    <li>Service Scheduling: Use the platform to schedule TNR services at vet clinics and coordinate with volunteers for trapping, transport, and aftercare.</li>
+                    <li>Data Tracking: Record when, where, and what TNR services are being used, and by whom (rescue or TNR-certified individual), to quantify rescue allocation and support funding allocation.</li>
+                  </ul>
+                </div>
+          
+                <!-- Second Column -->
+                <div class="col-md-6">
+                  <img src="images/largeorgs.png" class="img-fluid" alt="Responsive Image">
+                </div>
+              </div>
+            </div>
+        </div>
     </div>
   </div>
 
@@ -145,9 +286,69 @@
 
 
 
+    <!-- Breadcrumbs -->
+    <!-- Custom JS to toggle content -->
+    <script>
+      // Select all breadcrumb links
+      const breadcrumbLinks = document.querySelectorAll('.breadcrumb-link');
+  
+      // Function to show content based on clicked breadcrumb
+      breadcrumbLinks.forEach(link => {
+        link.addEventListener('click', function (event) {
+          event.preventDefault(); // Prevent default anchor click behavior
+  
+          // Get target content section
+          const target = this.getAttribute('data-target');
+          const targetContent = document.getElementById(target);
+  
+          // Hide all content sections
+          document.querySelectorAll('.content-section').forEach(section => {
+            section.classList.remove('active');
+          });
+  
+          // Show the target content section
+          targetContent.classList.add('active');
+        });
+      });
+    </script> 
 
+    <!-- Breadcrumbs links colors -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Select all breadcrumb links
+        const breadcrumbLinks = document.querySelectorAll('.breadcrumb-link');
+  
+        // Function to handle click on each breadcrumb link
+        breadcrumbLinks.forEach(link => {
+          link.addEventListener('click', function (event) {
+            event.preventDefault(); // Prevent default link behavior
+  
+            // Remove active class from all links
+            breadcrumbLinks.forEach(link => {
+              link.classList.remove('active');
+            });
+  
+            // Add active class to the clicked link
+            this.classList.add('active');
+  
+            // Get the color from the data attribute and set it as the text color
+            const color = this.getAttribute('data-color');
+            this.style.color = color;
+          });
+        });
+            // Set the first breadcrumb link as active by default
+            const firstLink = breadcrumbLinks[0];
+            if (firstLink) {
+            firstLink.classList.add('active');
+            firstLink.style.color = firstLink.getAttribute('data-color');
+         }
 
+      });
+    </script>
 
+    <!-- Bootstrap 5 JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  
   </body>
 </html>
