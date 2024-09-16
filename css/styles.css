@@ -211,6 +211,26 @@ h2 {
   background: url('/images/pink.svg') no-repeat center center;
 }
 
+/* HOW IT WORKS */
+
+.container-work {
+  margin-top: 64px;
+}
+
+.row-work {
+  margin-top: 32px;
+}
+
+.heading {
+  color: var(--dark-blue);
+  margin-bottom: 10%;
+}
+
+.bold-heading {
+  font-weight: bold;
+  margin-top: 7%;
+}
+
 
 
 

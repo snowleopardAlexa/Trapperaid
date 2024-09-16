@@ -1,0 +1,96 @@
+/* Vertical Breadcrumbs */
+
+.breadcrumb-item {
+  margin-bottom: 1px;
+  border-radius: 4px;
+  padding: 20px;
+}
+
+.breadcrumb-item-one {
+  background-color: var(--aqua);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.breadcrumb-item-two {
+  background-color: var(--purple);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.breadcrumb-item-three {
+  background-color: var(--dark-blue);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.breadcrumb-item-four {
+  background-color: var(--blue);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.breadcrumb-item-five {
+  background-color: var(--pink);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Underline under the box - the user knows that the item was clicked */
+
+.breadcrumb-item-one.active {
+  border-bottom: 4px solid white;
+}
+
+.breadcrumb-item-two.active {
+  border-bottom: 4px solid white;
+}
+
+.breadcrumb-item-three.active {
+  border-bottom: 4px solid white;
+}
+
+.breadcrumb-item-four.active {
+  border-bottom: 4px solid white;
+}
+
+.breadcrumb-item-five.active {
+  border-bottom: 4px solid white;
+}
+
+ul {
+  list-style-type: none; /* Removes bullet points */
+  padding: 8px; /* Removes default padding */
+  margin: 0; /* Removes default margin */
+}
+
+/* Vertical breadcrumbs */
+.container-section {
+  margin-top: 100px;
+  border-radius: 4px;
+  padding: 20px;
+}
+
+.section-content {
+  padding: 20px;
+}
+
+.heading-container {
+  text-align: center;
+}
+
+/* Remove default breadcrumb divider */
+.breadcrumb {
+  background: none; /* Remove the background */
+  padding: 0; /* Remove padding */
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: none; /* Remove the default divider */
+}
+
+.title-attention {
+  font-size: 1rem;
+  color: var(--red);
+  text-decoration: none;
+}

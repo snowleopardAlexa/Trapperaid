@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/colors.css">
     <link rel="stylesheet" href="css/breadcrumbs.css">
+    <link rel="stylesheet" href="css/vertical-breadcrumbs.css">
     <!--Breadcrumb horizontal-->
     <style>
       /* Hide all content sections by default */
@@ -22,10 +23,17 @@
         display: block;
       }
     </style>
+    <style>
+      .responsive-img {
+        width: 100%; /* Ensure image is responsive */
+        height: auto; /* Maintain aspect ratio */
+        margin-top: 20%;
+      }
+    </style>
   </head>
   <body>
 
-    <!--Navigation-->
+    <!-- NAVIGATION -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #e3f2fd;">
       <div class="container-fluid">
         <a class="navbar-brand" href="https://catcrisispossiblesolution.com">
@@ -63,7 +71,7 @@
       </div>
     </nav>
 
-    <!--About Section-->
+    <!-- ABOUT -->
     <div class="container-md">
       <div class="row">
         <div class="col">
@@ -116,7 +124,7 @@
       </div>
   </div>
 
-  <!--Why We Do It Section-->
+  <!-- WHY WE DO IT -->
   <div class="container-fluid container-cause">
     <h6 class="ms-1 text-center">Why We Do It</h6>
     <h2 class="text-center">Shelters and rescues are stacked and unable to control the rapid spread of cat overpopulation while local governments do not have enough data to understand where to allocate the resources that could help to tackle the problem. </h2>
@@ -151,7 +159,7 @@
     </div>
   </div>
 
-  <!--How Can We Help-->
+  <!-- HOW CAN WE HELP -->
   <div class="container-fluid container-help bg-white">
     <h6 class="ms-1">How Can We Help</h6>
     <h2 class="text-center">Solo cat rescuers, shelters, rescues, local governments, veterinary clinics, and rescue-related cat organizations can benefit from Trapperaid platform.</h2>
@@ -277,74 +285,190 @@
               </div>
             </div>
         </div>
+
+        <!-- HOW IT WORKS -->
+        <div class="container-fluid container-work">
+          <!-- Headings -->
+          <div class="heading-container">
+            <h6 class="text-center">How It Works</h6>
+            <h2 class="text-center">With user-friendly, usable, and intuitive interface our platform offer unforgettable experience and fast access to resources. No need to fight for low-cost spay/neuter appointments!</h2>
+          </div>
+      
+          <!-- Two Columns Container -->
+          <div class="row row-work">
+            <!-- First Column: Vertical Breadcrumbs -->
+            <div class="col-md-6">
+              <div class="container-section">
+                <div class="breadcrumb-container">
+                  <nav class="breadcrumb d-flex flex-column text-center" aria-label="breadcrumb">
+                    <a class="breadcrumb-item breadcrumb-item-one text-white active" href="#" aria-current="page" data-content="forone">For Cat Rescuers</a>
+                    <a class="breadcrumb-item breadcrumb-item-two text-white" href="#" data-content="fortwo">For Shelters/Rescues</a>
+                    <a class="breadcrumb-item breadcrumb-item-three text-white" href="#" data-content="forthree">For Local Governments</a>
+                    <a class="breadcrumb-item breadcrumb-item-four text-white" href="#" data-content="forfour">For Vets Clinics</a>
+                    <a class="breadcrumb-item breadcrumb-item-five text-white" href="#" data-content="forfive">For Larger Organizations</a>
+                  </nav>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Second Column: Content Area -->
+            <div class="col-md-6">
+              <div class="content-area" id="content-area">
+              <!-- Content will be updated dynamically -->
+            </div>
+          </div>
+             <!-- Additional Small Heading -->
+             <h6 class="bold-heading title-attention text-center">ATTENTION: We never ask for the exact location of a cat colony! We only ask for a general area like Ridgewood Queens for data tracking and success rate purpose to better understand which areas need support the most.</h6>
+          
+          </div>
+          </div>
+  </div>
+</div>
+
+<!-- BREADCRUMBS HORIZONTAL -->
+<script>
+// Select all breadcrumb links
+const breadcrumbLinks = document.querySelectorAll('.breadcrumb-link');
+
+// Function to show content based on clicked breadcrumb
+breadcrumbLinks.forEach(link => {
+  link.addEventListener('click', function (event) {
+    event.preventDefault(); // Prevent default anchor click behavior
+
+    // Get target content section
+    const target = this.getAttribute('data-target');
+    const targetContent = document.getElementById(target);
+
+    // Hide all content sections
+    document.querySelectorAll('.content-section').forEach(section => {
+      section.classList.remove('active');
+    });
+
+    // Show the target content section
+    targetContent.classList.add('active');
+  });
+});
+
+
+// Breadcrumbs links colors 
+document.addEventListener("DOMContentLoaded", function () {
+  // Select all breadcrumb links
+  const breadcrumbLinks = document.querySelectorAll('.breadcrumb-link');
+
+  // Function to handle click on each breadcrumb link
+  breadcrumbLinks.forEach(link => {
+    link.addEventListener('click', function (event) {
+      event.preventDefault(); // Prevent default link behavior
+
+      // Remove active class from all links
+      breadcrumbLinks.forEach(link => {
+        link.classList.remove('active');
+      });
+
+      // Add active class to the clicked link
+      this.classList.add('active');
+
+      // Get the color from the data attribute and set it as the text color
+      const color = this.getAttribute('data-color');
+      this.style.color = color;
+    });
+  });
+      // Set the first breadcrumb link as active by default
+      const firstLink = breadcrumbLinks[0];
+      if (firstLink) {
+      firstLink.classList.add('active');
+      firstLink.style.color = firstLink.getAttribute('data-color');
+   }
+});
+</script>
+
+<!-- BREADCRUMBS VERTICAL -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const breadcrumbLinks = document.querySelectorAll('.breadcrumb-item');
+    const contentArea = document.getElementById('content-area');
+
+    breadcrumbLinks.forEach(link => {
+      link.addEventListener('click', function (event) {
+        event.preventDefault();
+
+        // Remove active class from all breadcrumb links
+        breadcrumbLinks.forEach(link => link.classList.remove('active'));
+
+        // Add active class to the clicked link
+        this.classList.add('active');
+
+        // Update content based on data-content attribute
+        const contentId = this.getAttribute('data-content');
+        updateContent(contentId);
+      });
+    });
+
+    function updateContent(contentId) {
+      // Example content changes based on data-content
+      let htmlContent = '';
+      if (contentId === 'forone') {
+        htmlContent = `
+          <h4>As a solo cat rescuer, you are at the forefront of trapping, neutering, and returning feral cats. YOU ARE OUR HERO!</h4>
+           <div class="container mt-4">
+           <div class="row">
+             <!-- First Column -->
+          <div class="col-md-6">
+          <h6>STEPS TO BE TAKEN</h6>
+          <ul class="list-unstyled">
+          <li>1. Register on Trapperaid and pass the verification process.</li><br>
+          <li>2. Choose your role - Trapper, Host, Driver, Trapper Helper or all of them.</li><br>
+          <li>3. Either fill up information about your cat colony, holding space or a transport you offer.</li><br>
+          <li>4. Let our team to raise the funds for your colony cats, book spay/neuter appointments, pay at the vet by using the funds or either wait for a Trapper to book your holding space or a transport. </li>
+        </ul>
+      </div>
+     <!-- Second Column -->
+      <div class="col-md-6">
+        <img src="images/forcatsrescuers.png" alt="Responsive Image" class="responsive-img">
+      </div>
     </div>
   </div>
+        `;
+      } else if (contentId === 'fortwo') {
+        htmlContent = `
+    <h4>As a shelter/rescue you are often unable to take in or treat cats in need. You need a help and assistance to make your beautiful mission to work. </h4>
+           <div class="container mt-4">
+           <div class="row">
+             <!-- First Column -->
+          <div class="col-md-6">
+          <h6>STEPS TO BE TAKEN</h6>
+          <ul class="list-unstyled">
+          <li>1. We will register your shelter/rescue on the platform and guide you on how to list resources, schedule services, and manage volunteers.</li><br>
+          <li>2. We will provide you training sessions on using the platform for coordination and data entry.</li><br>
+          <li>3. Start using our services! Raise funds for your colony cats, book a holding place or a transport. Schedule the spay/neuter appointment, pay at the vet for spay/neuter and unexpected medial problems.</li><br>
+          <li>4. Let our team to raise the funds for your colony cats, book spay/neuter appointments, pay at the vet by using the funds or either wait for a Trapper to book your holding space or a transport. </li>
+        </ul>
+      </div>
+     <!-- Second Column -->
+      <div class="col-md-6">
+        <img src="images/forcatsrescuers.png" alt="Responsive Image" class="responsive-img">
+      </div>
+    </div>
+  </div>        
+        `;
+      } else if (contentId === 'forthree') {
+        htmlContent = `
+          <h3>Section Heading 3</h3>
+          <p>This is content for Services.</p>
+        `;
+      } else if (contentId === 'forfour') {
+        htmlContent = `
+          <h3>Section Heading 4</h3>
+          <p>This is content for Contact.</p>
+        `;
+      }
+      contentArea.innerHTML = htmlContent;
+    }
 
-
-
-
-
-
-
-    <!-- Breadcrumbs -->
-    <!-- Custom JS to toggle content -->
-    <script>
-      // Select all breadcrumb links
-      const breadcrumbLinks = document.querySelectorAll('.breadcrumb-link');
-  
-      // Function to show content based on clicked breadcrumb
-      breadcrumbLinks.forEach(link => {
-        link.addEventListener('click', function (event) {
-          event.preventDefault(); // Prevent default anchor click behavior
-  
-          // Get target content section
-          const target = this.getAttribute('data-target');
-          const targetContent = document.getElementById(target);
-  
-          // Hide all content sections
-          document.querySelectorAll('.content-section').forEach(section => {
-            section.classList.remove('active');
-          });
-  
-          // Show the target content section
-          targetContent.classList.add('active');
-        });
-      });
-    </script> 
-
-    <!-- Breadcrumbs links colors -->
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        // Select all breadcrumb links
-        const breadcrumbLinks = document.querySelectorAll('.breadcrumb-link');
-  
-        // Function to handle click on each breadcrumb link
-        breadcrumbLinks.forEach(link => {
-          link.addEventListener('click', function (event) {
-            event.preventDefault(); // Prevent default link behavior
-  
-            // Remove active class from all links
-            breadcrumbLinks.forEach(link => {
-              link.classList.remove('active');
-            });
-  
-            // Add active class to the clicked link
-            this.classList.add('active');
-  
-            // Get the color from the data attribute and set it as the text color
-            const color = this.getAttribute('data-color');
-            this.style.color = color;
-          });
-        });
-            // Set the first breadcrumb link as active by default
-            const firstLink = breadcrumbLinks[0];
-            if (firstLink) {
-            firstLink.classList.add('active');
-            firstLink.style.color = firstLink.getAttribute('data-color');
-         }
-
-      });
-    </script>
+    // Set initial content
+    updateContent('forone');
+  });
+</script>
 
     <!-- Bootstrap 5 JS and Popper.js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
