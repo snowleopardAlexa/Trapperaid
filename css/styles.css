@@ -3,6 +3,7 @@
 html {
   padding: 0;
   margin: 0;
+  font-size: 18px; /* default for larger screens */
 }
 
 body {
@@ -14,6 +15,14 @@ body {
 .container-fluid {
   padding: 7% 17% 7% 17%;
   background-color: var(--white);
+}
+
+.container-members {
+  padding: 5% 5% 5% 5%;
+}
+
+.container-features {
+  margin-bottom: 32px;
 }
 
 /* headings */
@@ -50,6 +59,46 @@ h6 {
   text-decoration: underline;
 }
 
+/* media query to adjust font size for smaller screens */
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 16px; /* Smaller screens get a smaller root font size */
+  }
+}
+
+@media (max-width: 992px) {
+  html {
+    font-size: 16px; /* Further reduce root font size for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 16px; /* Reduce root font size for tablets */
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  html {
+    font-size: 14px; /* Small screens, like mobile phones */
+  }
+  
+}
+
+/* adjust padding for mobile screens (max-width: 767px) */
+@media (max-width: 767.98px) {
+  .container-about {
+    padding: 0px; /* smaller padding for mobile screens */
+  }
+  .container-fluid {
+    padding: 12% 7% 12% 7%;
+  }
+}
+
 /* body text */
 
 .body-large {
@@ -65,7 +114,6 @@ h6 {
 }
 
 /************************** ABOUT ***************************/
-
 /* Navbar */
 
 .navbar .container-fluid {
@@ -94,18 +142,8 @@ h6 {
   color: var(--white);
 }
 
-.container-md {
-  padding: 60px;
-}
-
-.container-hero {
-  margin-top: 20px;
-  padding: 30px;
-  background-color: var(--blue);
-}
-
-.img-fluid {
-margin-top: -61px;
+.navbar-collapse {
+ text-align: center;
 }
 
 /*  services available */
@@ -119,6 +157,7 @@ margin-top: -61px;
   background-attachment: scroll;
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .card-body-search {
@@ -126,6 +165,7 @@ margin-top: -61px;
   background-attachment: scroll;
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .card-body-vets {
@@ -133,6 +173,7 @@ margin-top: -61px;
   background-attachment: scroll;
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 
@@ -240,7 +281,7 @@ margin-top: -61px;
   position: relative;
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
   padding-left: 30px; /* Adjust based on icon size */
 }
 
@@ -274,38 +315,7 @@ margin-top: -61px;
 
 /************************** HOW IT WORKS ***************************/
 
-.container-work {
-  margin-top: 64px;
-}
-
-.row-work {
-  margin-top: 32px;
-}
-
-.heading {
-  color: var(--dark-blue);
-  margin-bottom: 10%;
-}
-
-.bold-heading {
-  font-weight: bold;
-  margin-top: 7%;
-}
-
-.col-help {
-  margin-top: 32px;
-}
-
-.img-fluid-help {
-  margin-top: 32px;
-}
-
-.row-work {
-  margin-top: 80px;
-}
-
 /* vertical breadcrumbs */
-
 .breadcrumb-item {
   margin-bottom: 1px;
   border-radius: 4px;
@@ -374,9 +384,7 @@ ul {
 .container-section {
   margin-top: 100px;
   border-radius: 4px;
-  padding: 60px;
 }
-
 
 .breadcrumb {
   background: none;
@@ -385,12 +393,6 @@ ul {
 
 .breadcrumb-item + .breadcrumb-item::before {
   content: none; /* remove the default divider */
-}
-
-.title-attention {
-  font-size: 1rem;
-  color: var(--red);
-  text-decoration: none;
 }
 
 

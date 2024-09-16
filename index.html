@@ -44,6 +44,12 @@
       width: 100%;
       height: auto;
     }
+    .custom-full-width {
+      width: 100%;
+      max-width: 100%; /* Override Bootstrap's max-width */
+      padding-left: 0; /* Optional: Remove left padding */
+      padding-right: 0; /* Optional: Remove right padding */
+    }
     </style>
   </head>
   <body>
@@ -55,34 +61,31 @@
           <img src="/images/logo.png" alt="Logo" width="46" height="40" class="d-inline-block align-text-center ms-4 me-2">
           Trapperaid
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler me-3" type="button" style ="background-color: white; border: none; border-radius: 0px;" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto mx-4">
+          <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active"  aria-current="page" href="#section1">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#section2">Why We Do It</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Why We Do It</a>
+              <a class="nav-link" href="#section3">How Can We Help</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">How Can We Help</a>
+              <a class="nav-link" href="#section4">How It Works</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">How It Works</a>
+              <a class="nav-link" href="#section5">Team</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Team</a>
+              <a class="nav-link" href="#section6">Join us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Join us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#section7">Contact</a>
             </li>
           </ul>
         </div>
@@ -91,29 +94,36 @@
 
     <!------------------------------------------------------->   
     <!-- ABOUT -->
+    <section id="section1">
     <div class="container-fluid">
       <div class="row">
-        <div class="col">
-          <div class="container">
+        <div class="col-md-6">
+          <div class="container-about">
             <h6 style="margin-bottom: 16px;" class="ms-1">About</h6>
-            <h1>Connecting individuals involved in Trap-Neuter-Return(TNR) enabling them access and offer essential services. </h1>
-            <p class="body-large" style=" padding: 16px 16px 0px 0px;">Trapperaid is a platform that centralizes services (funds, holding space, transport) while providing the local governments an access to the data about the numbers of spayed/neutered cats, their treatment cost, and veterinary offices that offer discounted services to feral cats. </p>
+            <h1>Connecting individuals involved in Trap-Neuter-Return(TNR) and enabling them to access and offer essential services. </h1>
+            <p class="body-large" style="padding: 16px 0px 0px 0px;">Trapperaid is a platform designed to centralize and streamline the TNR process through  managing and coordinating all aspects of TNR.
+              Our goal is to connect the TNR community while facilitating fundraising, scheduling and providing access to low-cost veterinary appointments, and working with local governments.</p>
            </div>
         </div>
-        <div class="col">
+        <!-- column hidden on mobile (screen width < 768px) -->
+        <div class="col-md-6 d-flex justify-content-center align-items-center">
           <div class="container">
-            <img src="/images/hero-4.png" class="img-fluid" alt="The man and the woman facing forward smiling, gradient backgrounds blue and green, surrounded by icons.">
+            <img src="/images/hero-4.png" class="img-fluid d-none d-md-block" alt="The man and the woman facing forward smiling, gradient backgrounds blue and green, surrounded by icons.">
         </div>
         </div>
       </div>
-      <div class="container-md container-hero rounded-pill" style="margin-top: 40px;">
-         <h3 style="color: white; text-align: center;">Every person willing to help feral cats can join Trapperaid!</h3>
-       </div>
-       <div class="container-md container-member">
-        <h4 style="text-align: center;">AFTER BECOMING A MEMBER YOU WILL BE ABLE TO</h4>
+     </div>
+  
+     <!-- LARGE SLOGAN-->
+     <div class="section" style="margin-top: 0px; background-color: #3035A6; padding: 32px;">
+      <h3 style="color: white; text-align: center;">Anyone interested in helping community cats can join Trapperaid!</h3>
+     </div>
+
+      <div class="container-members">
+        <h4 style="text-align: center; margin-top: 20px;">AFTER BECOMING A MEMBER YOU WILL BE ABLE TO</h4>
       </div>
       <!--Services Available to Users After Joining the Platform-->
-      <div class="container-md container-features">
+      <div class="container-features">
         <div class="row">
           <div class="col-sm-4 mb-3 mb-sm-0">
             <div class="card card-feature p-4 text-center">
@@ -141,60 +151,66 @@
           </div>
         </div>
       </div>
-  </div>
-
+    </section> 
+  
   <!------------------------------------------------------->   
   <!-- WHY WE DO IT -->
-  <div class="container-fluid" style="background-color: #0cb4ae1a;">
+  <section id="section2">
+  <div class="container-fluid" style="border-top: 10px solid #0cb4ae1a; border-bottom: 10px solid #0cb4ae1a;">
     <h6 style="margin-bottom: 16px;" class="ms-1 text-center">Why We Do It</h6>
-    <h2 class="custom-heading text-center">Shelters and rescues are stacked and unable to control the rapid spread of cat overpopulation while local governments do not have enough data to understand where to allocate the resources that could help to tackle the problem. </h2>
-    <h4 class="mt-4" style="text-align: center;">CAT OVERPOPULATION PROBLEM</h4>
+    <h2 style="font-weight: 600;" class="text-center">Shelters and rescues are overburdened and unable to control cat overpopulation alone, while local governments do not have adequate data to understand where to allocate the resources that could help to tackle the problem.</h2>
+    <h4 style="text-align: center; margin-top: 40px;">CAT OVERPOPULATION PROBLEM</h4>
     <div class="container-cards">
     <div class="card-group">
       <div class="card">
         <div class="card-body card-body-fact-one" style="padding: 15% 15% 10% 15%;">
-          <h3 class="card-title-facts text-center">500.000 - 1 million<br> feral cats</h3>
-          <p class="body-normal text-center mt-4">Flatbush Cats, a nonprofit organization in Brooklyn, estimates that there are as many as half a million feral cats living in New York City. Many other organizations estimate it to be as high as 1 million.</p>
+          <h3 class="card-title-facts text-center">500,000 feral cats<br>in NYC</h3>
+          <p class="body-normal text-center mt-4"><strong>Flatbush Cats</strong>, a nonprofit organization in Brooklyn , estimates that there are as many as half a million feral cats living in New York City.</p>
         </div>
       </div>
       <div class="card">
         <div class="card-body card-body-fact-two" style="padding: 15% 15% 10% 15%;">
-          <h3 class="card-title-facts text-center">45.5% cat<br> rescuers</h3>
-          <p class="body-normal text-center mt-4">According to a survey conducted by our team, 45.5% of cat rescuers have a major problem in accessing low-cost spay/neuter appts, and 21% of them say they can’t afford to treat sick cats before fixing them.</p>
+          <h3 class="card-title-facts text-center">45.5% cat<br>rescuers</h3>
+          <p class="body-normal text-center mt-4">According to a survey conducted by our team,<strong> 45.5% </strong>of cat rescuers have a major problem in accessing low-cost spay/neuter appts, and<strong> 21%</strong> of them say they can’t afford to treat sick cats before fixing them.</p>
         </div>
       </div>
     </div>
     <div class="card-group">
       <div class="card">
         <div class="card-body card-body-fact-three" style="padding: 15% 15% 10% 15%;">
-          <h3 class="card-title-facts text-center">15% over humane<br>capacity</h3>
-          <p class="body-normal card-text-fact text-center mt-4">The ACC is 15% over its humane capacity for cats. In late July 2023, the ACC reached "critical capacity" and could only accept cat surrenders in emergency situations or if they were a safety risk.</p>
+          <h3 class="card-title-facts text-center">25% increase in<br>surrendered animals</h3>
+          <p class="body-normal card-text-fact text-center mt-4"><strong>The Animal Care Centers of NYC</strong>, New York City’s largest animal shelter, reported a 25% increase surrenders by owners of dogs and cats in 2022.  
+            In late July 2023, the ACC reached "critical capacity" and could only accept cat surrenders in emergency situations or if they were a safety risk.</p>
         </div>
       </div>
       <div class="card">
         <div class="card-body card-body-fact-four" style="padding: 15% 15% 10% 15%;">
           <h3 class="card-title-facts text-center">1.3 - 4 billion birds<br>killed each year</h3>
-          <p class="body-normal text-center mt-4">According to All About Birds it is estimated that cats kill 1.3–4 billion birds each year in the U.S. alone, with 69% of these kills attributable to feral or unowned cats. </p>
+          <p class="body-normal text-center mt-4">According to<strong> All About Birds</strong> it is estimated that cats kill 1.3–4 billion birds each year in the U.S. alone, with 69% of these kills attributable to feral or unowned cats. </p>
         </div>
       </div>
     </div>
   </div>
   </div>
+</section>
 
   <!------------------------------------------------------->    
   <!-- HOW CAN WE HELP -->
+  <section id="section3">
   <div class="container-fluid bg-white">
     <h6 style="margin-bottom: 16px;" class="ms-1">How Can We Help</h6>
-    <h2 class="text-center">Solo cat rescuers, shelters, rescues, local governments, veterinary clinics, and rescue-related cat organizations can benefit from Trapperaid platform.</h2>
+    <h2 style="font-weight: 600;" class="text-center">Solo cat rescuers, shelters, rescues, local governments, veterinary clinics, and rescue-related cat organizations can benefit from Trapperaid platform.</h2>
     <!--breadcrumb navigation-->
      <nav aria-label="breadcrumb" style="margin-top: 32px";>
-      <ol class="breadcrumb d-flex justify-content-center">
+      <div id="breadcrumb-horizontal">
+      <ul class="breadcrumb breadcrumb-horizontal d-flex justify-content-center">
         <li class="breadcrumb-item breadcrumb-item-one body-normal"><a href="#" data-target="one" class="breadcrumb-link">Cat Rescuers</a></li>
         <li class="breadcrumb-item breadcrumb-item-two body-normal"><a href="#" data-target="two" class="breadcrumb-link">Shelters/Rescues</a></li>
         <li class="breadcrumb-item breadcrumb-item-three body-normal"><a href="#" data-target="three" class="breadcrumb-link">Local Governments</a></li>
-        <li class="breadcrumb-item breadcrumb-item-four body-normal"><a href="#" data-target="four" class="breadcrumb-link">Vets Clinics</a></li>
-        <li class="breadcrumb-item breadcrumb-item-five body-normal"><a href="#" data-target="five" class="breadcrumb-link">Large Organizations</a></li>
-      </ol>
+        <li class="breadcrumb-item breadcrumb-item-four body-normal"><a href="#" data-target="four" class="breadcrumb-link">Veterinary Clinics</a></li>
+        <li class="breadcrumb-item breadcrumb-item-five body-normal"><a href="#" data-target="five" class="breadcrumb-link">Larger Organizations</a></li>
+      </ul>
+    </div>
     </nav>
     <!-- content section -->
     <!-- Cat Rescuers Content -->
@@ -203,42 +219,43 @@
         <div class="row">
           <!-- first column -->
           <div class="col-md-6 col-help">
-            <h4>Upon registering to Trapperaid, solo cats rescuers can offer and get access to essential resources:</h4>
+            <h4>Upon registering with Trapperaid,<strong> cat rescuers </strong>can offer and gain access to essential resources, including:</h4>
             <ul class="icon-list icon-list-one">
               <li class="body-small">Funds for spaying/neutering colony cats and covering their medical treatments. </li>
-              <li class="body-small">Holding spaces for cats before and after the surgery. </li>
+              <li class="body-small">Holding space for cats before and after the surgery. </li>
               <li class="body-small">Transport for cats to veterinary appointments, and pick up/drop off at the Trapper’s convenience. </li>
               <li class="body-small">Help in trapping colony cats.</li>
             </ul>
           </div>
           <!-- second column -->
           <div class="col-md-6">
-            <img src="images/catrescuer.png" class="img-fluid img-fluid-help" alt="Responsive Image">
+            <img src="images/catrescuer-new.png" class="img-fluid img-fluid-help" alt="Responsive Image">
           </div>
         </div>
       </div>
     </div>
-
+ 
     <!-- Shelters/Rescues Content -->
     <div id="two" class="content-section">
       <div class="container">
         <div class="row">
           <!-- first column -->
           <div class="col-md-6 col-help">
-            <h4>Trapperaid can reduce the cat population and take burden from shelters/rescues that can’t accept more cats. </h4>
+            <h4>Trapperaid can reduce the cat population and ease the burden of <strong>shelters and rescues.</strong></h4>
             <ul class="icon-list icon-list-two">
-              <li class="body-small">Resource allocation: Trapperaid will provide list of available traps, transport options, and holding spaces, streamlining collaboration among rescues, TNR-certified individuals, and vetted volunteers.</li>
+              <li class="body-small">Resource allocation: Trapperaid provides a list of available traps, transportation options, and holding spaces, streamlining collaboration among rescues, TNR-certified individuals, and vetted volunteers.</li>
               <li class="body-small">Service Scheduling: Use the platform to schedule TNR services at vet clinics and coordinate with volunteers for trapping, transport, and aftercare.</li>
-              <li class="body-small">Data Tracking: Record when, where, and what TNR services are being used, and by whom (rescue or TNR-certified individual), to quantify rescue allocation and support funding allocation.</li>
+              <li class="body-small">Data Tracking: Record when, where, and what TNR services are being used, and by whom , to quantify rescue allocation and support funding allocation.</li>
             </ul>
           </div>
           <!-- second column -->
           <div class="col-md-6">
-            <img src="images/sheltersrescues.png" class="img-fluid img-fluid-help" alt="Responsive Image">
+            <img src="images/shelters-new.png" class="img-fluid img-fluid-help" alt="Responsive Image">
           </div>
         </div>
       </div>
     </div>
+
     
     <!-- Local Governments Content -->
     <div id="three" class="content-section">
@@ -246,37 +263,37 @@
           <div class="row">
             <!-- first column -->
               <div class="col-md-6 col-help">
-                  <h4>Trapperaid can deliver data to local governments that would be able to understand where and how to allocate the resources.</h4>
+                  <h4>Trapperaid can deliver data to<strong> local governments </strong> that would be able to understand where and how to allocate the resources. </h4>
                   <ul class="icon-list icon-list-three">
-                    <li class="body-small">Data-Driven Decision Making:  Use the platform’s centralized data to make informed decisions on resource allocation, public health strategies, and budget planning.</li>
-                    <li class="body-small">Monitoring and Reporting:  Access regular reports that outline TNR activities, costs, and impact to ensure city resources are utilized efficiently </li>
-                    <li class="body-small">Collaboration and Partnerships:  Work with TNR organizations, vet clinics, and community members to enhance TNR efforts and address the feral cat population challenge holistically.</li>
+                    <li class="body-small">Data-Driven Decision Making: Use the platform’s centralized data to make informed decisions on resource allocation, public health strategies, and budget planning. </li>
+                    <li class="body-small">Monitoring and Reporting: Access regular reports that outline TNR activities, costs, and impact to ensure city resources are utilized efficiently. </li>
+                    <li class="body-small">Collaboration and Partnerships: Work with TNR organizations, vet clinics, and community members to enhance TNR efforts and address the feral cat population challenge holistically.</li>
                   </ul>
                 </div>
                 <!-- second column -->
                 <div class="col-md-6">
-                  <img src="images/governments.png" class="img-fluid img-fluid-help" alt="Responsive Image">
+                  <img src="images/governments-new.png" class="img-fluid img-fluid-help" alt="Responsive Image">
                 </div>
               </div>
             </div>
          </div>
 
     <!-- Vets Clinics -->
-    <div id="four" class="content-section">
+     <div id="four" class="content-section">
            <div class="container">
             <div class="row">
               <!-- first column -->
               <div class="col-md-6 col-help">
-                <h4>Register to Trapperaid as a vet clinic, faciliate your scheduling process with us, and get potential tax breaks.  </h4>
-                <ul class="icon-list icon-list-four">
-                  <li class="body-small">Vets can register their clinics and services on the platform, listing the discounted TNR services they provide. </li>
-                  <li class="body-small">Vets will receive service requests directly through the platform, streamlining the process of scheduling appointments for TNR-certified  individuals and rescues. </li>
-                  <li class="body-small">Potential tax incentives or subsidies for vet clinicts that join the standardized pricing model, thus expanding the availability of discounted TNR services. </li>
-                </ul>
+              <h4>Register with Trapperaid as a<strong> vet clinic</strong> faciliate your scheduling process with us, and get potential tax breaks. </h4>
+              <ul class="icon-list icon-list-four">
+              <li class="body-small">Vets can register their clinics and services on the platform, listing the discounted TNR services they provide. </li>
+              <li class="body-small">Vets will receive service requests directly through the platform, streamlining the process of scheduling appointments for TNR-certified  individuals and rescues.  </li>
+              <li class="body-small">Potential tax incentives or subsidies for vet clinicts that join the standardized pricing model, thus expanding the availability of discounted TNR services.  </li>
+            </ul>
               </div>
               <!-- second column -->
               <div class="col-md-6">
-                <img src="images/vetsclinics.png" class="img-fluid img-fluid-help" alt="Responsive Image">
+                <img src="images/vetsclinics-new.png" class="img-fluid img-fluid-help" alt="Responsive Image">
               </div>
             </div>
           </div>
@@ -284,68 +301,70 @@
 
     <!-- Large Organizations -->   
     <div id="five" class="content-section">
-            <div class="container">
-              <div class="row">
-                <!-- first column -->
-                <div class="col-md-6 col-help">
-                  <h4>Trapperaid can reduce the cat population and take burden from shelters/rescues that can’t accept more cats. </h4>
-                  <ul class="icon-list icon-list-five">
-                    <li class="body-small">Resource allocation: Trapperaid will provide list of available traps, transport options, and holding spaces, streamlining collaboration among rescues, TNR-certified individuals, and vetted volunteers.</li>
-                    <li class="body-small">Service Scheduling: Use the platform to schedule TNR services at vet clinics and coordinate with volunteers for trapping, transport, and aftercare.</li>
-                    <li class="body-small">Data Tracking: Record when, where, and what TNR services are being used, and by whom (rescue or TNR-certified individual), to quantify rescue allocation and support funding allocation.</li>
-                  </ul>
-                </div>
-                <!-- second column -->
-                <div class="col-md-6">
-                  <img src="images/largeorgs.png" class="img-fluid img-fluid-help" alt="Responsive Image">
-                </div>
-              </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <!-- first column -->
+          <div class="col-md-6 col-help">
+            <h4>Trapperaid invites<strong> larger non-profit organizations</strong> to join our efforts in tackling the cat crisis in NYC. </h4>
+            <ul class="icon-list icon-list-five">
+              <li class="body-small">Data Sharing and Integration: Contribute data to a centralized database, including registered colonies, ongoing TNR activities, and service gaps.  </li>
+              <li class="body-small">Education and Training: Provide resources and training for new TNR-certified individuals through the platform.</li>
+              <li class="body-small">Collaborative Initiatives: Partner with other organizations to identify high-priority areas for TNR efforts and allocate resources effectively.</li>
+            </ul>
+          </div>
+          <!-- second column -->
+          <div class="col-md-6">
+            <img src="images/largeorgs-new.png" class="img-fluid img-fluid-help" alt="Responsive Image">
+          </div>
         </div>
-       </div>
+      </div>   
+    </div>
+  </div>
+  </section> 
 
      <!------------------------------------------------------->  
      <!-- HOW IT WORKS -->
-        <div class="container-fluid" style="background-color: #0cb4ae1a;">
+      <section id="section4">
+        <div class="container-fluid" style="border-top: 10px solid #0cb4ae1a; border-bottom: 10px solid #0cb4ae1a;">
           <!-- headings -->
           <div class="heading-container">
             <h6 style="margin-bottom: 16px;" class="text-center">How It Works</h6>
-            <h2 class="text-center" style="margin-bottom: 60px;">With user-friendly, usable, and intuitive interface our platform offer unforgettable experience and fast access to resources. No need to fight for low-cost spay/neuter appointments!</h2>
+            <h2 class="text-center" style="font-weight: 600; margin-bottom: 40px;">With a user-friendly and intuitive interface our platform offers an unforgettable experience and easy access to resources.</h2>
           </div>
           <!-- two columns container -->
           <div class="row">
             <!-- first column: vertical breadcrumbs -->
             <div class="col-md-6">
-              <div class="container-section">
-                <div class="breadcrumb-container">
-                  <nav class="breadcrumb d-flex flex-column text-center" aria-label="breadcrumb">
+              <div id="breadcrumb-vertical">
+                <div class="breadcrumb-container" style="margin-bottom: 40px;">
+                  <nav class="breadcrumb-vertical d-flex flex-column text-center" aria-label="breadcrumb">
                     <a class="breadcrumb-item breadcrumb-item-forone text-white active" style="font-size: 1.125rem" href="#" aria-current="page" data-content="forone">For Cat Rescuers</a>
                     <a class="breadcrumb-item breadcrumb-item-fortwo text-white" style="font-size: 1.125rem" href="#" data-content="fortwo">For Shelters/Rescues</a>
                     <a class="breadcrumb-item breadcrumb-item-forthree text-white" style="font-size: 1.125rem" href="#" data-content="forthree">For Local Governments</a>
-                    <a class="breadcrumb-item breadcrumb-item-forfour text-white" style="font-size: 1.125rem" href="#" data-content="forfour">For Vets Clinics</a>
+                    <a class="breadcrumb-item breadcrumb-item-forfour text-white" style="font-size: 1.125rem" href="#" data-content="forfour">For Veterinary Clinics</a>
                     <a class="breadcrumb-item breadcrumb-item-forfive text-white" style="font-size: 1.125rem" href="#" data-content="forfive">For Larger Organizations</a>
                   </nav>
                 </div>
               </div>
             </div>
             <!-- second column: content area -->
-            <div class="col-md-6">
+            <div class="column-breadcrumbs-vertical col-md-6" style="margin-top: 0px">
               <div class="content-area" id="content-area">
               <!-- Content will be updated dynamically -->
             </div>
           </div>
-          <!-- additional small heading -->
-             <h6 class="bold-heading title-attention text-center">ATTENTION: We never ask for the exact location of a cat colony! We only ask for a general area like Ridgewood Queens for data tracking and success rate purpose to better understand which areas need support the most.</h6>
           </div>
           </div>
+        </section>
 
    <!------------------------------------------------------->    
     <!-- TEAM -->
+    <section id="section5">
     <div class="container-fluid" style="border-bottom: 10px solid #0cb4ae1a;">
       <!-- top section -->
       <div class="text-center mb-4">
         <h6 style="margin-bottom: 16px;">Team</h6>
-        <h2>We are cats parents, wildlife lovers, tech-savvies, and cat rescue community members who decided to use their skills and knowledge to tackle a cat crisis in the US. </h2>
+        <h2 style="font-weight: 600;">We are cats parents, wildlife lovers, tech-savvies, legal representatives, and cat rescue community members who decided to use their skills and knowledge to tackle a cat crisis in the US. </h2>
         <p class="body-normal" style="padding: 20px;">Meet our team members and see who is behind Trapperaid project.</p>
       </div>
       <!-- cards sections -->
@@ -357,7 +376,7 @@
               <img src="images/alexa.png" class="card-img-top" alt="Image 1">
               <div class="card-body">
                 <h5 class="card-title">Alexa Kyler</h5>
-                <p class="body-small">UX/UI Designer & Website Developer</p>
+                <p class="body-small">Cat Mom</p>
                 <div class="social-icons">
                   <a href="https://www.linkedin.com/in/aleksandra-slomska-1039681b3/" target="_blank" aria-label="LinkedIn">
                     <img src="images/linkedin-pink.svg" height="32px" width="32px" class="img-fluid img-fluid-social" alt="Responsive Image">
@@ -369,13 +388,13 @@
               </div>
             </div>
           </div>
-          <!-- LILI -->
+          <!-- ALEX -->
           <div class="col-md-3 mb-4">
             <div class="card">
-              <img src="https://via.placeholder.com/300" class="card-img-top" alt="Image 2">
+              <img src="images/alex2.png" class="card-img-top" alt="Image 3">
               <div class="card-body">
-                <h5 class="card-title">Lili Komitski</h5>
-                <p class="body-small">Data Scientist</p>
+                <h5 class="card-title">Alexander Kyler</h5>
+                <p class="body-small">Cat Dad</p>
                 <div class="social-icons">
                   <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
                     <img src="images/linkedin-blue.svg" height="32px" width="32px" class="img-fluid img-fluid-social" alt="Responsive Image">
@@ -384,28 +403,13 @@
               </div>
             </div>
           </div>
-          <!-- FRED -->
-          <div class="col-md-3 mb-4">
+           <!-- ROOM FOR YOU -->
+           <div class="col-md-3 mb-4">
             <div class="card">
-              <img src="https://via.placeholder.com/300" class="card-img-top" alt="Image 3">
+              <img src="images/room.png" class="card-img-top" alt="Image 4">
               <div class="card-body">
-                <h5 class="card-title">Fred LastName</h5>
-                <p class="body-small">Full Stack Engineer & Security Specialist</p>
-                <div class="social-icons">
-                  <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
-                    <img src="images/linkedin-purple.svg" height="32px" width="32px" class="img-fluid img-fluid-social" alt="Responsive Image">
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- ANNA -->
-          <div class="col-md-3 mb-4">
-            <div class="card">
-              <img src="https://via.placeholder.com/300" class="card-img-top" alt="Image 4">
-              <div class="card-body">
-                <h5 class="card-title">Anna LastName</h5>
-                <p class="body-small">Data Scientist</p>
+                <h5 class="card-title">Room for you!</h5>
+                <p class="body-small">Join our colony.</p>
                 <div class="social-icons">
                   <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
                     <img src="images/linkedin-aqua.svg" height="32px" width="32px" class="img-fluid img-fluid-social" alt="Responsive Image">
@@ -417,31 +421,36 @@
         </div>
       </div>
     </div>
+  </section>
 
   <!------------------------------------------------------->     
   <!-- JOIN US -->
+  <section id="section6">
   <div class="container-fluid">
   <!-- first row: text section -->
   <div class="row">
     <div class="col-12 text-center">
       <h6 style="margin-bottom: 16px;">Join us</h6>
-      <h2>Are you genuinely interested in making a change? Join us! We welcome cats rescuers, birds and wildlife advocates, law makers, government representitives and more!</h2>
-      <p class="body-normal" style="padding: 20px;">Join our project and help us with building it while sharing with us your knowledge, expertise, resources, and hands to work.</p>
+      <h2 style="font-weight: 600;">Are you interested in bringing change? Join us! 
+        We welcome everyone: cat rescuers, wildlife advocates, lawmakers, government representatives, and more!</h2>
+      <p class="body-normal" style="padding: 20px;">Join our project and help us build it. We rely on your knowledge, expertise, and feedback to make this work. </p>
     </div>
   </div>
 </div>
  <!-- responsive full-width image -->
  <img src="images/join-us.png" class="img-fluid" alt="Full Width Image">
+</section>
 
   <!------------------------------------------------------->    
   <!-- CONTACT -->
+  <section id="section7">
   <div class="container-fluid">
   <!-- first row -->
   <div class="row">
     <div class="col-12 text-center">
       <h6 style="margin-bottom: 16px;">Contact</h6>
-      <h2>We welcome anyone to contact us and ask questions about our project. </h2>
-      <p class="body-normal" style="padding: 20px;"">Depends on the volume of the messages we will get, we will try to answer for your questions as soon as possible. Please contact one of our team members.</p>
+      <h2 style="font-weight: 600">Want to get involved, ask questions, or provide feedback? Let us know! </h2>
+      <p class="body-normal" style="padding: 20px;">We will try to respond to you as soon as possible. Please contact us below.</p>
     </div>
   </div>
   <!-- new section -->
@@ -451,30 +460,20 @@
         <h5 style="text-align: center;">Contact Information</h5>
         <p class="body-large" style="color: #646AD9; font-weight: 600; text-align: center; text-decoration: none;">Please, e-mail us.</p>
         <h6 style="text-align: center; text-decoration: none;">Trapperaid Team</h6>
-        <p href="mailto:example@example.com" class="body normal" style="text-align: center; text-decoration: underline;">catcrisispossiblesolution@gmail.com</p>
+        <p href="mailto:example@example.com" class="body normal" style="text-align: center; text-decoration: underline;">TrapperAid@gmail.com</p>
     </div>
   </section>
   </div>
+</section> 
 
 <!------------------------------------------------------->  
 <!-- Footer -->
 <footer class="text-center text-lg-start bg-body-tertiary">
   <!-- section: links  -->
-  <section class="" style="padding: 20px; background-color: #646AD9;">
+  <section class="" style="padding: 0px 20px; background-color: #646AD9; padding: 20px;">
     <div class="container text-center text-md-start mt-5">
       <!-- grid row -->
       <div class="row mt-3">
-        <!-- grid column -->
-        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-          <!-- content -->
-          <h6 class="body-normal" style="text-decoration: none; color: white;">
-            <img class="me-2" src="images/logo.png" height="48px" width="54px">
-            Trapperaid
-          </h6>
-          <p style="margin-left: 64px; color: white; margin-top: -12px;">
-            Join our colony. 
-          </p>
-        </div>
         <!-- grid column -->
         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4" style="margin-top: 13px;">
           <!-- links -->
@@ -482,13 +481,10 @@
             General
           </h6>
           <p>
-            <a href="https://www.catcrisispossiblesolution.com" class="body-normal text-white">Home</a>
+            <a href="#section1" class="body-normal text-white">About</a>
           </p>
           <p>
-            <a href="#!" class="body-normal text-white">About</a>
-          </p>
-          <p>
-            <a href="#!" class="body-normal text-white">Why We Do It</a>
+            <a href="#section2" class="body-normal text-white">Why We Do It</a>
           </p>
         </div>
         <!-- grid column -->
@@ -498,13 +494,13 @@
             Trapperaid
           </h6>
           <p>
-            <a href="#!" class="body-normal text-white">How It Works</a>
+            <a href="#section3" class="body-normal text-white">How It Works</a>
           </p>
           <p>
-            <a href="#!" class="body-normal text-white">Team</a>
+            <a href="#section4" class="body-normal text-white">Team</a>
           </p>
           <p>
-            <a href="#!" class="body-normal text-white">Join us</a>
+            <a href="#section5" class="body-normal text-white">Join us</a>
           </p>
         </div>
         <!-- grid column -->
@@ -513,7 +509,7 @@
           <h6 class="text-uppercase fw-bold mb-4" style="margin-top: 13px;">Contact</h6>
           <p class="body-normal text-white">New York, NY 11102, US</p>
           <p class="body-normal text-white">
-            catcrisispossiblesolution@gmail.com
+            TrapperAid@gmail.com
           </p>
         </div>
       </div>
@@ -545,13 +541,14 @@
   </div>
 </footer>
 </body>
-<!--------------------- body end ---------------------------->   
-
 <!-----------------  JAVASCRIPT  ------------------------>    
+<!-- Bootstrap 5 JS and Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
 <!-- BREADCRUMBS HORIZONTAL -->
 <script>
 // Select all breadcrumb links
-const breadcrumbLinks = document.querySelectorAll('.breadcrumb-link');
+const breadcrumbLinks = document.querySelectorAll('#breadcrumb-horizontal .breadcrumb-link');
 
 // Function to show content based on clicked breadcrumb
 breadcrumbLinks.forEach(link => {
@@ -572,11 +569,10 @@ breadcrumbLinks.forEach(link => {
   });
 });
 
-
-// Breadcrumbs links colors 
+// breadcrumbs links colors 
 document.addEventListener("DOMContentLoaded", function () {
   // Select all breadcrumb links
-  const breadcrumbLinks = document.querySelectorAll('.breadcrumb-link');
+  const breadcrumbLinks = document.querySelectorAll('#breadcrumb-horizontal .breadcrumb-link');
 
   // Function to handle click on each breadcrumb link
   breadcrumbLinks.forEach(link => {
@@ -608,41 +604,26 @@ document.addEventListener("DOMContentLoaded", function () {
 <!-- BREADCRUMBS VERTICAL -->
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    const breadcrumbLinks = document.querySelectorAll('.breadcrumb-item');
+    const breadcrumbLinks = document.querySelectorAll('#breadcrumb-vertical .breadcrumb-item');
     const contentArea = document.getElementById('content-area');
 
-    breadcrumbLinks.forEach(link => {
-      link.addEventListener('click', function (event) {
-        event.preventDefault();
-
-        // Remove active class from all breadcrumb links
-        breadcrumbLinks.forEach(link => link.classList.remove('active'));
-
-        // Add active class to the clicked link
-        this.classList.add('active');
-
-        // Update content based on data-content attribute
-        const contentId = this.getAttribute('data-content');
-        updateContent(contentId);
-      });
-    });
-
+    // function to update content
     function updateContent(contentId) {
       // Example content changes based on data-content
       let htmlContent = '';
       if (contentId === 'forone') {
         htmlContent = `
-          <h4>As a <span style="text-decoration: underline; color: #0CB4AE; font-weight: 600;">solo cat rescuer</span>, you are at the forefront of trapping, neutering, and returning feral cats. YOU ARE OUR HERO!</h4>
+          <h4 style="text-align: center">As a <span style="text-decoration: underline; color: #0CB4AE; font-weight: 600;">cat rescuer</span>, you are at the forefront of trapping, neutering/spaying, and returning cats. YOU ARE OUR HERO!</h4>
            <div class="container mt-4">
            <div class="row">
            <!-- first column -->
            <div class="col-md-6">
-           <h6>STEPS TO BE TAKEN</h6>
+           <h6 style="text-align: center;">STEPS TO BE TAKEN</h6>
            <ul>
            <li class="body-small">1. Register on Trapperaid and pass the verification process.</li><br>
-           <li class="body-small">2. Choose your role - Trapper, Host, Driver, Trapper Helper or all of them.</li><br>
-           <li class="body-small">3. Either fill up information about your cat colony, holding space or a transport you offer.</li><br>
-           <li class="body-small">4. Let our team to raise the funds for your colony cats, book spay/neuter appointments, pay at the vet by using the funds or either wait for a Trapper to book your holding space or a transport. </li>
+           <li class="body-small">2. Choose your role(s) - Trapper, Trapper Helper, Host, Driver, or all of them. </li><br>
+           <li class="body-small">3. Provide more information about your cat colony, holding space, or the transportation you offer. </li><br>
+           <li class="body-small">4. Offer or request services, raise funds for your colony cats, book spay/neuter appointments, and pay at the vet using your funds. </li>
           </ul>
          </div>
          <!-- second column -->
@@ -654,13 +635,13 @@ document.addEventListener("DOMContentLoaded", function () {
         `;
       } else if (contentId === 'fortwo') {
         htmlContent = `
-         <h4>As a <span style="text-decoration: underline; color: #646AD9; font-weight: 600;">shelter/rescue</span> you are often unable to take in or treat cats in need. You need a help and assistance to make your beautiful mission to work. </h4>
+         <h4 style="text-align: center">As a <span style="text-decoration: underline; color: #646AD9; font-weight: 600;">shelter/rescue</span> you are often unable to take in or treat cats in need. You need a help and assistance to make your beautiful mission to work. </h4>
            <div class="container mt-4">
            <div class="row">
              <!-- First Column -->
           <div class="col-md-6">
-          <h6>STEPS TO BE TAKEN</h6>
-          <ul">
+          <h6 style="text-align: center">STEPS TO BE TAKEN</h6>
+          <ul>
           <li class="body-small">1. We will register your shelter/rescue on the platform and guide you on how to list resources, schedule services, and manage volunteers.</li><br>
           <li class="body-small">2. We will provide you training sessions on using the platform for coordination and data entry.</li><br>
           <li class="body-small">3. Start using our services! Raise funds for your colony cats, book a holding place or a transport. Schedule the spay/neuter appointment, pay at the vet for spay/neuter and unexpected medial problems.</li><br>
@@ -676,34 +657,35 @@ document.addEventListener("DOMContentLoaded", function () {
         `;
       } else if (contentId === 'forthree') {
         htmlContent = `
-        <h4>As a<span style="text-decoration: underline; color: #002244; font-weight: 600;"> local government</span> you will get data that will help you to allocate the funds and finally tackle the cat crisis in your jurisdiction once and for good. </h4>
+           <h4 style="text-align: center">As a <span style="text-decoration: underline; color: #0CB4AE; font-weight: 600;">solo cat rescuer</span>, you are at the forefront of trapping, neutering, and returning feral cats. YOU ARE OUR HERO!</h4>
            <div class="container mt-4">
            <div class="row">
-             <!-- First Column -->
-          <div class="col-md-6">
-          <h6>STEPS TO BE TAKEN</h6>
-          <ul">
-          <li class="body-small">1. We will register city and public health officials on the platform and provide access to dashboards, data visualization tools, and reporting features. </li><br>
-          <li class="body-small">2. We will train your officials on interpreting public health data, managing alerts, coordinating  with TNR providers, and using resource allocation tools. </li><br>
-          <li class="body-small">4. We will start collecting and analyzing health-related data to monitor disease outbreaks, optimize resource distribution, and guide public health measures to enhance public health and safety outcomes. </li>
-        </ul>
+           <!-- first column -->
+           <div class="col-md-6">
+           <h6 style="text-align: center;">STEPS TO BE TAKEN</h6>
+           <ul>
+           <li class="body-small">1. Register on Trapperaid and pass the verification process.</li><br>
+           <li class="body-small">2. Choose your role - Trapper, Host, Driver, Trapper Helper or all of them.</li><br>
+           <li class="body-small">3. Either fill up information about your cat colony, holding space or a transport you offer.</li><br>
+           <li class="body-small">4. Let our team to raise the funds for your colony cats, book spay/neuter appointments, pay at the vet by using the funds or either wait for a Trapper to book your holding space or a transport. </li>
+          </ul>
+         </div>
+         <!-- second column -->
+        <div class="col-md-6">
+         <img src="images/1.png" alt="The man holding, kissing, cuddling the cat" class="responsive-img">
+        </div>
       </div>
-     <!-- second column -->
-      <div class="col-md-6">
-        <img src="images/3.png" alt="Responsive Image" class="responsive-img">
-      </div>
-    </div>
-  </div>        
+     </div>     
         `;
       } else if (contentId === 'forfour') {
         htmlContent = `
-     <h4>As <span style="text-decoration: underline; color: #3035A6; font-weight: 600;">a vet clinic</span> you will get data that will help you to allocate the funds and finally tackle the cat crisis in your jurisdiction once and for good.</h4>
+       <h4 style="text-align: center">As <span style="text-decoration: underline; color: #3035A6; font-weight: 600;">a vet clinic</span> you will get data that will help you to allocate the funds and finally tackle the cat crisis in your jurisdiction once and for good.</h4>
            <div class="container mt-4">
            <div class="row">
              <!-- First Column -->
           <div class="col-md-6">
-          <h6>STEPS TO BE TAKEN</h6>
-          <ul">
+          <h6 style="text-align: center">STEPS TO BE TAKEN</h6>
+          <ul>
           <li class="body-small">1. We will register your vet clinic on the platform and help you list services, set pricing, and understand platform incentives.</li><br>
           <li class="body-small">2. We will offer sessions to show your vets how to manage appointments, integrate with existing systems, and report data. </li><br>
           <li class="body-small">3. Start using our services! Raise funds for your colony cats, book a holding place or a transport. Schedule the spay/neuter appointment, pay at the vet for spay/neuter and unexpected medial problems.</li><br>
@@ -719,13 +701,13 @@ document.addEventListener("DOMContentLoaded", function () {
         `;
       } else if (contentId === 'forfive') {
         htmlContent = `
-          <h4>As<span style="text-decoration: underline; color: #A6308C; font-weight: 600;"> a larger organization</span> you will get data that will help you to allocate the funds and finally tackle the cat crisis in your jurisdiction once and for good.</h4>
+          <h4 style="text-align: center">As<span style="text-decoration: underline; color: #A6308C; font-weight: 600;"> a larger organization</span> you will get data that will help you to allocate the funds and finally tackle the cat crisis in your jurisdiction once and for good.</h4>
            <div class="container mt-4">
            <div class="row">
              <!-- First Column -->
           <div class="col-md-6">
-          <h6>STEPS TO BE TAKEN</h6>
-          <ul">
+          <h6 style="text-align: center">STEPS TO BE TAKEN</h6>
+          <ul>
           <li class="body-small">1. We will register your organization on the platform and integrate your management systems into ours. </li><br>
           <li class="body-small">2. We will provide you training on data integration and coordination tools. </li><br>
           <li class="body-small">3. We will monitor your data and adjust strategies as needed making sure your information is secure, easily accessible to you, and well-maintained. </li><br>
@@ -743,14 +725,26 @@ document.addEventListener("DOMContentLoaded", function () {
       contentArea.innerHTML = htmlContent;
     }
 
-    // Set initial content
+ // Add event listeners to breadcrumb links
+ breadcrumbLinks.forEach(link => {
+      link.addEventListener('click', function (event) {
+        event.preventDefault();
+
+        // Remove active class from all breadcrumb links
+        breadcrumbLinks.forEach(link => link.classList.remove('active'));
+
+        // Add active class to the clicked link
+        this.classList.add('active');
+
+        // Update content based on data-content attribute
+        const contentId = this.getAttribute('data-content');
+        updateContent(contentId);
+      });
+    });
+
+    // set default content by simulating a click on the first breadcrumb item
     updateContent('forone');
   });
 </script>
-
-    <!-- Bootstrap 5 JS and Popper.js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  
   </body>
 </html>
