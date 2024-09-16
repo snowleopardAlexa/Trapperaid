@@ -98,3 +98,21 @@ h4 {
   background-repeat: no-repeat;
 }
 
+
+/*  Why We Do It Section */
+
+.container-fluid {
+  background-color: var(--aqua-bg);
+  padding: 64px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  padding: 40px;
+}
+
+
+
+
+
+
