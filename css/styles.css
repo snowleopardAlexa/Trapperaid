@@ -1,14 +1,37 @@
+/* Main */
+
 html {
   padding: 0;
-  margin: 0
+  margin: 0;
 }
 
 body {
   background-color: #ffffff;
+  font-family: 'Plus Jakarta Sans';
+  color: var(--dark-blue);
 }
 
-.navbar-default {
-  background-color: var(--dark-blue);
+/* Navbar */
+
+.navbar .container-fluid {
+  background-color: var(--purple);
+  padding: 0px;
+  margin: 0px;
+}
+
+.navbar-brand {
+  color: var(--white);
+  font-weight: 600;
+}
+
+.navbar-brand:hover {
+  color: var(--white);
+}
+
+.navbar .navbar-nav .nav-link {
+  font-size: 0.85rem;
+  padding: 20px;
+  color: var(--white);
 }
 
 .container-md {
@@ -16,26 +39,62 @@ body {
 }
 
 .container-hero {
+  margin-top: 20px;
   padding: 30px;
   background-color: var(--blue);
 }
 
 h6 {
   font-size: 1.125rem;
-  color: var(--dark-blue);
+  text-decoration: underline;
 }
 
 h1 {
   font-size: 2.125rem;
-  color: var(--dark-blue);
+  font-weight: bold;
 }
 
 p {
   font-size: 1.25rem;
-  color: var(--dark-blue);
+  padding: 16px 16px 16px 0px;
 }
 
 h3 {
   text-align: center;
   color: var(--white);
+  font-size: 1.5rem;
 }
+
+h4 {
+  text-align: center;
+  color: var(--dark-blue);
+  font-size: 1.25rem;
+}
+
+/*  Services Available to Users After Joining the Platform */
+
+.container-features {
+  padding: 0px;
+}
+
+.card-body-cat {
+  background-image: url('/images/cat-bg.png');
+  background-attachment: scroll;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.card-body-search {
+  background-image: url('/images/search-bg.png');
+  background-attachment: scroll;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.card-body-vets {
+  background-image: url('/images/vets-bg.png');
+  background-attachment: scroll;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
