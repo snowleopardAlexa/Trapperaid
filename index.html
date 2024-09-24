@@ -26,7 +26,7 @@
       .responsive-img {
         width: 100%; /* Ensure image is responsive */
         height: auto; /* Maintain aspect ratio */
-        margin-top: 20%;
+        margin-top: 32px;
       }
       .full-width-img {
       width: 100vw; /* Full width of the viewport */
@@ -186,7 +186,7 @@
       <div class="card">
         <div class="card-body card-body-fact-four" style="padding: 15% 15% 10% 15%;">
           <h3 class="card-title-facts text-center">One female cat can produce 100 kittens in her lifetime</h3>
-          <p class="body-normal text-center mt-4"><strong>Per the Lynchburg Humane Society</strong>, one unfixed female cat can have more than 100 kittens in her lifetime. If half of those kittens born are females, she and her  offspring can go on to have upwards of 300-400 kittens in 7 years.</p>
+          <p class="body-normal text-center mt-4">Per <strong>the Lynchburg Humane Society</strong>, one unfixed female cat can have more than 100 kittens in her lifetime. If half of those kittens born are females, she and her  offspring can go on to have upwards of 300-400 kittens in 7 years.</p>
         </div>
       </div>
     </div>
@@ -284,7 +284,7 @@
             <div class="row">
               <!-- first column -->
               <div class="col-md-6 col-help">
-              <h4>Register with TrapperAid as a<strong>veterinary clinic</strong> faciliate your scheduling process with us, and receive potential tax breaks. </h4>
+              <h4>Register with TrapperAid as a<strong> veterinary clinic</strong> faciliate your scheduling process with us, and receive potential tax breaks. </h4>
               <ul class="icon-list icon-list-four">
               <li class="body-small">Veterinary clinics can register their clinics and services on the platform, listing the discounted TNR services they provide.</li>
               <li class="body-small">Veterinary clinics will receive service requests directly through the platform, streamlining the process of scheduling appointments.</li>
@@ -305,7 +305,7 @@
         <div class="row">
           <!-- first column -->
           <div class="col-md-6 col-help">
-            <h4>TrapperAid invites<strong>larger non-profit organizations</strong> and companies to join our efforts in tackling the cat crisis in NYC.</h4>
+            <h4>TrapperAid invites<strong> larger non-profit organizations</strong> and companies to join our efforts in tackling the cat crisis in NYC.</h4>
             <ul class="icon-list icon-list-five">
               <li class="body-small">Data Sharing and Integration: Contribute data to a centralized database, including registered colonies, ongoing TNR activities, and service gaps.</li>
               <li class="body-small">Education and Training: Provide resources and training for new TNR-certified individuals through the platform.</li>
@@ -334,7 +334,7 @@
           <!-- two columns container -->
           <div class="row">
             <!-- first column: vertical breadcrumbs -->
-            <div class="col-md-6">
+            <div class="col-md-12">
               <div id="breadcrumb-vertical">
                 <div class="breadcrumb-container" style="margin-bottom: 40px;">
                   <nav class="breadcrumb-vertical d-flex flex-column text-center" aria-label="breadcrumb">
@@ -348,7 +348,7 @@
               </div>
             </div>
             <!-- second column: content area -->
-            <div class="column-breadcrumbs-vertical col-md-6" style="margin-top: 0px">
+            <div class="column-breadcrumbs-vertical col-md-12 mx-auto" style="margin-top: 0px">
               <div class="content-area" id="content-area">
               <!-- Content will be updated dynamically -->
             </div>
@@ -613,13 +613,13 @@ document.addEventListener("DOMContentLoaded", function () {
       let htmlContent = '';
       if (contentId === 'forone') {
         htmlContent = `
-          <h4 style="text-align: center">As a <span style="text-decoration: underline; color: #0CB4AE; font-weight: 600;">cat rescuer</span>, you are at the forefront of trapping, neutering/spaying, and returning cats. <span style="font-weight: 700;">YOU ARE OUR HERO!</span></h4>
+          <h4 style="text-align: center; padding: 0px 90px; 0px 90px;">As a <span style="text-decoration: underline; color: #0CB4AE; font-weight: 600;">cat rescuer</span>, you are at the forefront of trapping, neutering/spaying, and returning cats. <span style="font-weight: 700;">YOU ARE OUR HERO!</span></h4>
            <div class="container mt-4">
            <div class="row">
            <!-- first column -->
-           <div class="col-md-6">
+           <div class="col-md-10 mx-auto">
            <h6 style="text-align: center;">STEPS TO BE TAKEN</h6>
-           <ul>
+           <ul style="margin-top: 32px;">
            <li class="body-small">1. Register on Trapperaid and pass the verification process.</li><br>
            <li class="body-small">2. Choose your role(s) - trapper, trapper helper, host, and/or driver. </li><br>
            <li class="body-small">3. Provide more information about your cat colony, holding space, or the transportation you offer. </li><br>
@@ -627,29 +627,29 @@ document.addEventListener("DOMContentLoaded", function () {
           </ul>
          </div>
          <!-- second column -->
-        <div class="col-md-6">
-         <img src="images/1.png" alt="The man holding, kissing, cuddling the cat" class="responsive-img">
+        <div class="col-md-8 mx-auto" style="margin-top: 0px;">
+         <img src="images/for-cat-rescuers-min.png" alt="trapperaid-prototype" class="responsive-img">
         </div>
       </div>
      </div>
         `;
       } else if (contentId === 'fortwo') {
         htmlContent = `
-         <h4 style="text-align: center">As a <span style="text-decoration: underline; color: #646AD9; font-weight: 600;">shelter/rescue</span> you have limited resources and space. You need a help and assistance to make your mission to work. </h4>
+         <h4 style="text-align: center; padding: 0px 90px; 0px 90px;">As a <span style="text-decoration: underline; color: #646AD9; font-weight: 600;">shelter/rescue</span> you have limited resources and space. You need a help and assistance to make your mission work. </h4>
            <div class="container mt-4">
            <div class="row">
              <!-- First Column -->
-          <div class="col-md-6">
+          <div class="col-md-10 mx-auto">
           <h6 style="text-align: center">STEPS TO BE TAKEN</h6>
-          <ul>
-          <li class="body-small">1. We register your shelter/rescue on the platform and guide you on how to list resources, schedule services, and manage volunteers.</li><br>
-          <li class="body-small">2. We provide you training sessions on using the platform for coordination and data entry.</li><br>
+          <ul style="margin-top: 32px;">
+          <li class="body-small">1. We will register your shelter/rescue on the platform and guide you on how to list resources, schedule services, and manage volunteers.</li><br>
+          <li class="body-small">2. We will provide you training sessions on using the platform for coordination and data entry.</li><br>
           <li class="body-small">3. Start using our services! Raise funds, book a holding place or a transport, schedule appointments, and pay at the veterinary clinics for spay/neuter services and unexpected medial issues.</li><br>
         </ul>
       </div>
      <!-- second column -->
-      <div class="col-md-6">
-        <img src="images/2.png" alt="Responsive Image" class="responsive-img">
+      <div class="col-md-8 mx-auto">
+        <img src="images/for-rescues-min.png" alt="trapperaid prototype" class="responsive-img">
       </div>
     </div>
   </div>        
@@ -660,17 +660,17 @@ document.addEventListener("DOMContentLoaded", function () {
            <div class="container mt-4">
            <div class="row">
            <!-- first column -->
-           <div class="col-md-6">
+           <div class="col-md-10 mx-auto">
            <h6 style="text-align: center;">STEPS TO BE TAKEN</h6>
-           <ul>
+           <ul style="margin-top: 32px;">
            <li class="body-small">1. We will register city and public health officials on the platform and provide access to dashboards, data visualization tools, and reporting features. </li><br>
            <li class="body-small">2. We will train your officials on interpreting public health data, managing alerts, coordinating  with TNR providers, and using resource allocation tools. </li><br>
            <li class="body-small">3. We will start collecting and analyzing health-related data to monitor disease outbreaks, optimize resource distribution, and guide public health measures to enhance public health and safety outcomes. </li><br>
           </ul>
          </div>
          <!-- second column -->
-        <div class="col-md-6">
-         <img src="images/1.png" alt="The man holding, kissing, cuddling the cat" class="responsive-img">
+        <div class="col-md-8 mx-auto">
+         <img src="images/for-local-governments-min.png" alt="trapperaid-prototype" class="responsive-img">
         </div>
       </div>
      </div>     
@@ -681,17 +681,17 @@ document.addEventListener("DOMContentLoaded", function () {
            <div class="container mt-4">
            <div class="row">
              <!-- First Column -->
-          <div class="col-md-6">
+          <div class="col-md-10 mx-auto">
           <h6 style="text-align: center">STEPS TO BE TAKEN</h6>
-          <ul>
+          <ul style="margin-top: 32px;">
           <li class="body-small">1. We will register your veterinary clinic on the platform and help you list services, set pricing, and understand platform incentives. </li><br>
           <li class="body-small">2. We will provide sessions to show your vets how to manage appointments, integrate our platform with existing systems, and report data. </li><br>
           <li class="body-small">3. We will collect data on TNR services provided by your clinic to track your impact and prove that you qualify for incentives. </li><br>
         </ul>
       </div>
      <!-- second column -->
-      <div class="col-md-6">
-        <img src="images/4.png" alt="Responsive Image" class="responsive-img">
+      <div class="col-md-8 mx-auto">
+        <img src="images/for-veterinary-clinics-min.png" alt="trapperaid-prototype" class="responsive-img">
       </div>
     </div>
   </div>        
@@ -702,17 +702,17 @@ document.addEventListener("DOMContentLoaded", function () {
            <div class="container mt-4">
            <div class="row">
              <!-- First Column -->
-          <div class="col-md-6">
+          <div class="col-md-10 mx-auto">
           <h6 style="text-align: center">STEPS TO BE TAKEN</h6>
-          <ul>
+          <ul style="margin-top: 32px;">
           <li class="body-small">1. We will register your organization on the platform and integrate your management systems into ours. </li><br>
           <li class="body-small">2. We will provide you training on data integration and coordination tools. </li><br>
           <li class="body-small">3. We will monitor your data and adjust strategies as needed making sure your information is secure, easily accessible to you, and well-maintained. </li><br>
         </ul>
       </div>
      <!-- second column -->
-      <div class="col-md-6">
-        <img src="images/5.png" alt="Responsive Image" class="responsive-img">
+      <div class="col-md-8 mx-auto">
+        <img src="images/for-larger-organizations-min.png" alt="trapperaid-prototype" class="responsive-img">
       </div>
     </div>
   </div>        
