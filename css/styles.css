@@ -120,11 +120,11 @@ h6 {
   padding: 0px;
   margin: 0px;
   border: none;
-  background-color: var(--purple) !important;
+  background-color: var(--blue) !important;
 }
 
 .custom-navbar {
-  background-color: var(--purple) !important;
+  background-color: var(--blue) !important;
 }
 
 .navbar-brand {
