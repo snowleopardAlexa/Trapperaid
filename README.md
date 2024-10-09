@@ -1,4 +1,4 @@
-## **TrapperAid Projecta** 🦁 ## 
+## **TrapperAid Project** 💙 ## 
 
  <br/>
 
@@ -6,7 +6,7 @@ TrapperAid is a platform designed to centralize and streamline the TNR process t
 
 :mailbox: **Reach me out!** <br/>
 
-[![Mail Badge](https://img.shields.io/badge/-snowleopardAlexa-c0392b?style=flat&labelColor=c0392b&logo=gmail&logoColor=white)](mailto:alexakylernyc@gmail.com) [![Linkedin Badge](https://img.shields.io/badge/-Alexa-0e76a8?style=flat&labelColor=0e76a8&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/aleksandra-slomska/) [![Mail Badge](https://img.shields.io/badge/-@aleksandraslomska-e84393?style=flat&labelColor=e84393&logo=instagram&logoColor=white)](https://instagram.com/alexaslomski)
+[![Mail Badge](https://img.shields.io/badge/-snowleopardAlexa-c0392b?style=flat&labelColor=c0392b&logo=gmail&logoColor=white)](mailto:alexakylernyc@gmail.com) [![Linkedin Badge](https://img.shields.io/badge/-Alexa-0e76a8?style=flat&labelColor=0e76a8&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/aleksandra-slomska/) [![Mail Badge](https://img.shields.io/badge/-@aalexakylernyc-e84393?style=flat&labelColor=e84393&logo=instagram&logoColor=white)](https://instagram.com/trapperaid)
 
 ### ** AFTER BECOMING A MEMBER YOU WILL BE ABLE TO: ** ###
 
@@ -26,14 +26,9 @@ CAT OVERPOPULATION PROBLEM
 - 25% increase in surrendered animals - The Animal Care Centers of NYC, New York City’s largest animal shelter, reported a 25% increase in surrenders by owners of dogs and cats in 2022. In late July 2023, the ACC reached "critical capacity" and could only accept cat surrenders in emergency situations or if they were a safety risk.
 - One female cat can produce 100 kittens in her lifetime - Per the Lynchburg Humane Society, one unfixed female cat can have more than 100 kittens in her lifetime. If half of those kittens born are females, she and her offspring can go on to have upwards of 300-400 kittens in 7 years.
 
-#### INVESTORS & SPONSORS ARE WELCOME
+### **INVESTORS & SPONSORS ARE WELCOME**
 
 We are currently in the process of raising funds for TrapperAid platform. You're welcome to invest/sponsor our initative or join our team dedicated cat rescuers who want a change. 
 
-#### **Profile Visits**
-
-![visitors](https://visitor-badge.glitch.me/badge?page_id=snowleopardAlexa.snowleopardAlexa)
-
-
  <br/>
-🧡 🦁 🤍
+💙💙💙
