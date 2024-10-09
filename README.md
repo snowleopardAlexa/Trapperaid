@@ -1,10 +1,10 @@
-## **TrapperAid Project*** 💙 ## 
+## **TrapperAid Project** 💙 ## 
 
  <br/>
 
 TrapperAid is a platform designed to centralize and streamline the TNR process through managing and coordinating all aspects of TNR. Our goal is to connect the TNR community while facilitating fundraising, scheduling, providing access to low-cost veterinary appointments, and working with local governments.<br/><br/>
 
-:mailbox: ***Reach me out!** <br/>
+:mailbox: **Reach me out!** <br/>
 
 [![Mail Badge](https://img.shields.io/badge/-snowleopardAlexa-c0392b?style=flat&labelColor=c0392b&logo=gmail&logoColor=white)](mailto:alexakylernyc@gmail.com) [![Linkedin Badge](https://img.shields.io/badge/-Alexa-0e76a8?style=flat&labelColor=0e76a8&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/aleksandra-slomska/) [![Mail Badge](https://img.shields.io/badge/-@aalexakylernyc-e84393?style=flat&labelColor=e84393&logo=instagram&logoColor=white)](https://instagram.com/trapperaid)
 
