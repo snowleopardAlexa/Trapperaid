@@ -455,6 +455,18 @@ ul {
   text-decoration: none;
 }
 
+a img {
+  border: none;  /* removes any borders from the image */
+  outline: none;  /* removes the default focus outline */
+}
+
+a {
+  text-decoration: none;  /* removes any default underline or other link decorations */
+  border: none;           /* ensures no borders are applied to the anchor tag itself */
+  outline: none;          /* removes the outline that appears when focused */
+}
+
+
 
 
 
