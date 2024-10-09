@@ -78,8 +78,17 @@ h6 {
   html {
     font-size: 16px; /* Reduce root font size for tablets */
   }
+  h1 {
+    font-size: 1.75rem;
+  }
   h2 {
     font-size: 1rem;
+  }
+  h3 {
+    font-size: 1.5;
+  }
+  h4 {
+    font-size: 1.25rem;
   }
 }
 
