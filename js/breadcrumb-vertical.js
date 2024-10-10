@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
          <div class="col-md-10 mx-auto">
          <h6 style="text-align: center;">STEPS TO BE TAKEN</h6>
          <ul style="margin-top: 24px;">
-         <li class="body-normal" style="margin-top: 18px;">1. Register on Trapperaid and pass the verification process.</li>
+         <li class="body-normal" style="margin-top: 18px;">1. Register on TrapperAid and pass the verification process.</li>
          <li class="body-normal" style="margin-top: 18px;">2. Choose your role(s) - trapper, trapper helper, host, and/or driver.</li>
          <li class="body-normal" style="margin-top: 18px;">3. Provide more information about your cat colony, holding space, or the transportation you offer.</li>
          <li class="body-normal" style="margin-top: 18px;">4. Offer or request services, raise funds for your colony cats, book spay/neuter appointments, and pay at the veterinary clinic using your funds.</li>
